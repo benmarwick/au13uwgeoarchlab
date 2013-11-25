@@ -28,16 +28,14 @@
   For this function you'll need to have two other programs
   installed on your computer. These programs are not part
   of R, so the first time you use this function you'll need
-  to leave R, install these programs, #' then *RESTART* R
+  to leave R, install these programs, then \emph{RESTART} R
   before running this fuction. After the first run, you
   don't need to restart again when using this function.
-  Here are the two other programs you need:
-}
-\details{
-  1. Pandoc:
-  http://johnmacfarlane.net/pandoc/installing.html 2.
-  LaTeX: follow the instructions on the Pandoc download
-  page
+  Here are the two other programs you need: (1)
+  \href{http://johnmacfarlane.net/pandoc/installing.html}{Pandoc}
+  and (2) LaTeX, follow the instructions on the Pandoc
+  download page:
+  \href{http://johnmacfarlane.net/pandoc/installing.html}{http://johnmacfarlane.net/pandoc/installing.html}
 }
 \examples{
 # hopefully your path will be simpler than mine!

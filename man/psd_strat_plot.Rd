@@ -12,10 +12,7 @@
   and add the results to the plot}
 
   \item{n}{the number of clusters to identify in the data.
-  If you're plotting with clusters, you should take careful
-  note of what number of groups is indicated by the 'elbow'
-  in the first plot produced by this function. That will be
-  the n value. Default is three.}
+  Default is three.}
 }
 \value{
   a stratigraphic plot
