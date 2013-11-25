@@ -38,7 +38,12 @@ rmd_to_pdf <- function(my_rmd_filename,  wd, ...){
   
   # set working directory - you'll need to change this to the folder where 
   # you've saved this file that you're working on. Note the double-backslashes!
-  setwd(wd) # assumes wd has been set earlier in the line above
+  tmp <- getwd()
+  if(tmp == wd){
+         0       # if working directory is already wd, do nothing
+  } else {
+    setwd(wd)  } # assumes wd has been set earlier in the line above
+     
   
   # Load packages. By now you know you'll need to install these packages
   # the first time that you need them. 

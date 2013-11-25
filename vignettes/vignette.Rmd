@@ -217,6 +217,10 @@ psd_strat_plot(my_data)
 # it will not run when you knit HTML because we've set 'eval=FALSE' so
 # you'll need to run this block line-by-line to get the PDF (save 
 # the file first!)
-rmd_to_pdf("vingette",
-           "C:/Users/marwick/Documents/GitHub/au13uwgeoarchlab/vingettes")
+rmd_to_pdf("vignette",
+           "C:/Users/marwick/Documents/GitHub/au13uwgeoarchlab/vignettes")
+# if you get an error about a '.Random.seed' not found', then go to the 
+# directory that contains your Rmd file and delete the folder called
+# cache and the folder called figure
+
 ```
