@@ -10,7 +10,7 @@ First, make sure you've got Hadley Wickham's excellent devtools package installe
 ```
 install.packages(pkgs = "devtools", dependencies = TRUE)
 ```
-Windows users may also need to install [Rtools](http://cran.rstudio.com/bin/windows/Rtools/) and Mac users may also need to install [Xcode](https://developer.apple.com/xcode/). 
+Windows users may also need to install [Rtools](http://cran.rstudio.com/bin/windows/Rtools/) and Mac users may also need to install [Xcode](https://developer.apple.com/xcode/). These are installed outside of R. 
 
 Then, use the `install_github()` function to fetch this package from github:
 
