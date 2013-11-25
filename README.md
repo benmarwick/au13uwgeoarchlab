@@ -29,7 +29,7 @@ ls("package:au13uwgeoarchlab")
 
 How to get started
 ----
-Get the [lab report template R Markdown file](https://raw.github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/master/vignettes/vignette.Rmd) by either right-clicking on the [link](https://raw.github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/master/vignettes/vignette.Rmd) and saving as an Rmd file to work on in [RStudio](http://www.rstudio.com/ide/download/). Then study the lab report template carefully because it shows how all of the functions in this package should be used. [This](http://htmlpreview.github.io/?https://github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/blob/master/vignettes/vignette.html) is what is looks like when it's working properly. 
+Get the [lab report template R Markdown file](https://raw.github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/master/vignettes/vignette.Rmd) by either right-clicking on the [link](https://raw.github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/master/vignettes/vignette.Rmd) and saving as an Rmd file to work on in [RStudio](http://www.rstudio.com/ide/download/). Then study the lab report template carefully because it shows how all of the functions in this package should be used. [This](https://docs.google.com/viewer?url=https%3A%2F%2Fgithub.com%2FUW-Georchaeology-Lab%2Fau13uwgeoarchlab%2Fblob%2Fmaster%2Fvignettes%2Fvignette.pdf%3Fraw%3Dtrue) is what is looks like when it's working properly. 
 
 
 
