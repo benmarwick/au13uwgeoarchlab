@@ -82,7 +82,11 @@ interpolate_date <- function(my_data, depth_in_m, ...){
   # from http://stackoverflow.com/questions/6461209/how-to-round-up-to-the-nearest-10-or-100-or-x
   rounder <- function(x, round=10) ceiling(max(x+10^-9)/round + 1/round)*round
   d <- rounder(d, 10)
+  
+  # make the numbers look pretty
+  prettynum <- function(i) formatC(round(i, 0), big.mark=",",format="f", drop0trailing = TRUE)
+  d <- prettynum(d)
 
-return (d)
+return(d)
   
 }

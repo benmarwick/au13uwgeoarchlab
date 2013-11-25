@@ -5,8 +5,6 @@
 ```{r setup, echo=FALSE, cache=FALSE}
 # stop scientific notation in numeric output
 options(scipen = 999)
-# make the numbers look pretty
-prettynum <- function(i) formatC(round(i, 0), big.mark=",",format="f", drop0trailing = TRUE)
 ```
 
 
@@ -78,7 +76,7 @@ Here's where you describe the implications of your data in terms of:
 You will need to draw on previously published studies to make new connections with your data. Show how your data support or contradict previous claims.
 
 You may want to make some connection to a change in our variables at say, 
-sample 3.4 and other data from other sites. You'll want to refer to the age of sample 3.4, which you can compute like this, right in the middle of your sentence: "This substantial change in xxx occurs at about `r prettynum(au13uwgeoarchlab::interpolate_date(my_data, 3.4))` cal years BP."
+sample 3.4 and other data from other sites. You'll want to refer to the age of sample 3.4, which you can compute like this, right in the middle of your sentence: "This substantial change in xxx occurs at about `r au13uwgeoarchlab::interpolate_date(my_data, 3.4)` cal years BP."
  
 ### References
  
