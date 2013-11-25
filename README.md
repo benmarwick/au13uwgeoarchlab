@@ -35,7 +35,19 @@ Get the [lab report template R Markdown file](https://raw.github.com/UW-Georchae
 
 Solutions to common problems
 ----
-`Error: attempt to use zero-length variable name`
+Message: `Error: attempt to use zero-length variable name`
+Solution: You are probably trying to use a file name that has spaces or an unsual
+character in it. Change your filename so it has no spaces and, ideally, 
+no puncutaiton that can be mistaken for a maths symbol (ie. no +, -, /. :, periods, etc.)
+
+Message: `...had status 1`
+Solution: You probably have your PDF file open and R cannot overwrite the file
+while it's open. Quit all your PDF files and try again. 
+
+Message: `... .Random.seed ...`
+Solution: Go to the location of your markdown file and delete the folders called
+`cache` and `figure`, then try again
+
 
 
 Limitations and License
