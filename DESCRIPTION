@@ -31,3 +31,4 @@ Collate:
     'psd_three_classes.r'
     'rmd_to_pdf.r'
     'strat_plot_key_variables.r'
+VignetteBuilder: knitr
