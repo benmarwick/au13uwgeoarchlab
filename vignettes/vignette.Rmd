@@ -116,15 +116,15 @@ Or we can make a table from our data, so the table will update when we update ou
 require(pander)
 panderOptions('table.split.table', Inf)
 set.caption("My great data")
-table_data <- my_data[, c(
+table_data <- na.omit(my_data[, c(
                                      'DirectAMS.code',
                                      'Submitter.ID',
                                      'OxCal.median',
-                                     'OxCal.sigma')]
+                                     'OxCal.sigma')])
 pander(table_data, style = 'rmarkdown')
 ```
 
-
+Don't forget to edit the table captions...
  
 ```{r table-data, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
 require(pander)
@@ -219,8 +219,10 @@ psd_strat_plot(my_data)
 # the file first!)
 rmd_to_pdf("vignette",
            "C:/Users/marwick/Documents/GitHub/au13uwgeoarchlab/vignettes")
-# if you get an error about a '.Random.seed' not found', then go to the 
+# If you get an error about a '.Random.seed' not found', then go to the 
 # directory that contains your Rmd file and delete the folder called
-# cache and the folder called figure
+# cache and the folder called figure.
+# If you get an error that something 'had status 1', then shut all the PDF files
+# that you have open and try again. 
 
 ```

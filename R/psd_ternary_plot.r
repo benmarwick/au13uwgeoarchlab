@@ -56,7 +56,8 @@ psd_ternary_plot <- function(my_data, cex = 0.75, ...){
   # plot samples in ternary plot
   # see here for more details: 
   # http://cran.r-project.org/web/packages/soiltexture/vignettes/soiltexture_vignette.pdf
-  require(soiltexture)
+  # code for these functions comes from soiltexture.R that I pulled out of the
+  # package soiltexture. That package was too buggy to require here. 
   # dev.off() # clear plotting area
   
   # draw triangle with samples plotted

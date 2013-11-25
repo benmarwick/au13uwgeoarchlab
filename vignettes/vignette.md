@@ -102,54 +102,28 @@ Or we can make a table from our data, so the table will update when we update ou
 
 
 
-|  DirectAMS.code  |  Submitter.ID  |  OxCal.median  |  OxCal.sigma  |
-|:----------------:|:--------------:|:--------------:|:-------------:|
-|   D-AMS 004027   |   SQB Spit 3   |      391       |      52       |
-|   D-AMS 004028   |   SQB Spit 8   |      3615      |      36       |
-|   D-AMS 004029   |  SQB Spit 10   |      4131      |      58       |
-|   D-AMS 004030   |  SQB Spit 14   |      4085      |      56       |
-|   D-AMS 004031   |  SQB Spit 16   |      4254      |      69       |
-|   D-AMS 004032   |  SQB Spit 20   |      4359      |      52       |
-|   D-AMS 004033   |  SQB Spit 21   |                |               |
-|   D-AMS 004034   |  SQB Spit 26   |                |               |
-|   D-AMS 004035   |  SQB Spit 31   |      6808      |      44       |
-|   D-AMS 004036   |  SQB Spit 36   |      7013      |      71       |
-|   D-AMS 004037   |  SQB Spit 45   |      7426      |      46       |
-|   D-AMS 004038   |  SQB Spit 53   |      8839      |      96       |
-|   D-AMS 004039   |  SQB Spit 54   |                |               |
-|   D-AMS 004040   |  SQB Spit 56   |      9515      |      21       |
-|   D-AMS 004041   |  SQB Spit 61   |      4071      |      58       |
-|   D-AMS 004042   |  SQB Spit 64   |      9699      |      86       |
-|   D-AMS 004043   |  SQB Spit 71   |     19122      |      109      |
-|   D-AMS 004044   |  SQB Spit 73   |     13528      |      59       |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
-|                  |                |                |               |
+|  &nbsp;  |  DirectAMS.code  |  Submitter.ID  |  OxCal.median  |  OxCal.sigma  |
+|:--------:|:----------------:|:--------------:|:--------------:|:-------------:|
+|  **1**   |   D-AMS 004027   |   SQB Spit 3   |      391       |      52       |
+|  **2**   |   D-AMS 004028   |   SQB Spit 8   |      3615      |      36       |
+|  **3**   |   D-AMS 004029   |  SQB Spit 10   |      4131      |      58       |
+|  **4**   |   D-AMS 004030   |  SQB Spit 14   |      4085      |      56       |
+|  **5**   |   D-AMS 004031   |  SQB Spit 16   |      4254      |      69       |
+|  **6**   |   D-AMS 004032   |  SQB Spit 20   |      4359      |      52       |
+|  **9**   |   D-AMS 004035   |  SQB Spit 31   |      6808      |      44       |
+|  **10**  |   D-AMS 004036   |  SQB Spit 36   |      7013      |      71       |
+|  **11**  |   D-AMS 004037   |  SQB Spit 45   |      7426      |      46       |
+|  **12**  |   D-AMS 004038   |  SQB Spit 53   |      8839      |      96       |
+|  **14**  |   D-AMS 004040   |  SQB Spit 56   |      9515      |      21       |
+|  **15**  |   D-AMS 004041   |  SQB Spit 61   |      4071      |      58       |
+|  **16**  |   D-AMS 004042   |  SQB Spit 64   |      9699      |      86       |
+|  **17**  |   D-AMS 004043   |  SQB Spit 71   |     19122      |      109      |
+|  **18**  |   D-AMS 004044   |  SQB Spit 73   |     13528      |      59       |
 
 Table: My great data
 
 
-
+Don't forget to edit the table captions...
  
 
 |  Sample.ID  |  mean.pH  |  mean.EC  |  mean.MS.LF  |  mean.MS.FD  |  mean.Organic  |  mean.CaCO3  |

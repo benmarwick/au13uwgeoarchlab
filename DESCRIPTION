@@ -17,8 +17,7 @@ Depends:
     knitr,
     markdown,
     pander
-Suggests:
-    soiltexture
+VignetteBuilder: knitr
 Collate:
     'biplot_with_correlation.r'
     'get_data.r'
@@ -30,5 +29,5 @@ Collate:
     'psd_ternary_plot.r'
     'psd_three_classes.r'
     'rmd_to_pdf.r'
+    'soiltexture.R'
     'strat_plot_key_variables.r'
-VignetteBuilder: knitr
