@@ -16,12 +16,12 @@
 #' @examples
 #'  my_data <- get_data()
 #'  my_date_plot <- plot_dates(my_data)
-#'  interpolate_dates(my_data, 1.20) # where 1.20 is the depth in meters
+#'  interpolate_date(my_data, 1.20) # where 1.20 is the depth in meters
 
 #'  
   
 
-interpolate_dates <- function(my_data, depth_in_m, ...){
+interpolate_date <- function(my_data, depth_in_m, ...){
   # get date data from google sheet
   # Raw data on AMS ages from DirectAMS, then prepare for OxCal batch conversion
   # at https://c14.arch.ox.ac.uk/oxcal/OxCal.html

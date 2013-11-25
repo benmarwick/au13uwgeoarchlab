@@ -17,7 +17,7 @@ Depends:
     knitr,
     markdown,
     pander
-Suggests: 
+Suggests:
     soiltexture
 Collate:
     'biplot_with_correlation.r'
