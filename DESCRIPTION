@@ -14,10 +14,11 @@ Depends:
     gridExtra,
     reshape2,
     rioja,
-    soiltexture,
     knitr,
     markdown,
     pander
+Suggests: 
+    soiltexture
 Collate:
     'biplot_with_correlation.r'
     'get_data.r'
