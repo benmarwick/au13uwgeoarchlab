@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>au13uwgeoarchlab</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h1>au13uwgeoarchlab</h1>
+
+<p>Simple exploratory anayses and visualisation of geoarchaeological data for the UW ARCHY 482/486 Geoarchaeology class of Autumn 2013. The objective is to promote reproducible research in geoarchaeology by making the analyses explicit and supporting reporting of the results in a R Markdown file that includes text, figures, and the code that generated the results. </p>
+
+<h2>How to install</h2>
+
+<p>First, make sure you&#39;ve got Hadley Wickham&#39;s excellent devtools package installed. If you haven&#39;t got it, you can get it with these lines in your R console:</p>
+
+<pre><code>install.packages(pkgs = &quot;devtools&quot;, dependencies = TRUE)
+</code></pre>
+
+<p>Then, use the <code>install_github()</code> function to fetch this package from github:</p>
+
+<pre><code>require(devtools)
+install_github(repo = &quot;au13uwgeoarchlab&quot;, username = &quot;UW-Georchaeology-Lab&quot;)
+</code></pre>
+
+<p>Finally, attach the package to your R session like so, and get some basic information about it:</p>
+
+<pre><code>require(au13uwgeoarchlab)
+# get a list of functions in this package
+ls(&quot;package:au13uwgeoarchlab&quot;)
+# get help on how to use a function
+?psd_strat_plot
+</code></pre>
+
+<h2>How to get started</h2>
+
+<p>Get the <a href="https://raw.github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/master/my_lab_report.Rmd">lab report template R Markdown file</a> by either right-clicking on the <a href="https://raw.github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/master/my_lab_report.Rmd">link</a> and saving as and Rmd file, or copying and pasting into a R markdown window in <a href="http://www.rstudio.com/ide/download/">RStudio</a>. Then study the lab report template carefully because it shows how all of the functions in this package should be used.</p>
+
+<h2>Limitations and License</h2>
+
+<p>Currently this package is limited to the exploration of the data collected during Autumn 2013. </p>
+
+<p>Copyright &copy; 2013  Ben Marwick</p>
+
+<p>This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA. </p>
+
+</body>
+
+</html>
+

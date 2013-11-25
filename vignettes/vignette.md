@@ -1,3 +1,11 @@
+<!--
+%\VignetteEngine{knitr::knitr}
+%\VignetteIndexEntry{Analysing and visualising geoarchaeology data}
+-->
+
+
+
+
 Title of your lab report
 ========================================================
  
@@ -24,12 +32,74 @@ When you write your report you should delete the above text and use this section
  
 ## Methods and Materials
 
-This would be a good place to mention the radiocarbon dates... Here's a plot...
+This would be a good place to mention the radiocarbon dates... and refer to 
+the excavation report for details about the site and excavation methods.
 
-![this is one plot](figure/dates-plot.png) 
+### Chemical analyses
+ 
+Brief description of how you measured pH, EC, SOM , CaCO~3~...
+ 
+### Physical analyses 
+ 
+Brief description of how you measured colour, magnetic suceptibility and particle size distributions...
+ 
+## Results
+ 
+Your one or two sentence summary observations of the most striking changes in the sedimentary sequence at the site...
+ 
+### Chemical analyses
+ 
+Now the details... pH, EC, SOM, CaCO~3~ e.g. The pH values ranged from 8.67 to 6.93...
+
+### Physical analyses
+
+Particle size distributions... lots of possible plots here, chose wisely!
+
+Magnetic susceptibilty values ranged from 3146 to 46...
+
+### Discussion
+ 
+Here's where you describe the implications of your data in terms of:
+ 
+1. Past human behaviours
+2. Past environments
+3. Site formation processes
+ 
+You will need to draw on previously published studies to make new connections with your data. Show how your data support or contradict previous claims.
+
+You may want to make some connection to a change in our variables at say, 
+sample 3.4 and other data from other sites. You'll want to refer to the age of sample 3.4, which you can compute like this, right in the middle of your sentence: "This substantial change in xxx occurs at about 12560 cal years BP."
+ 
+### References
+ 
+Use APA style, look on [google scholar](http://scholar.google.com.offcampus.lib.washington.edu/) for the little 'cite' link that will generate nicely formatted references for you.
+
+### Tables and Figures
+
+For convienence, let's put all the tables and figures at the end of the text. 
+This is a common convention when preparing manuscripts for submission to journals
+or books for publication.
+
+Do be careful to put the tables and figures in a logical order that reflects the
+order that you mention things in your text. And don't forget to edit the captions 
+for your tables and figures to be richly detailed. 
+
+Tables first...
+
+
+Here's what you'd do for a simple table. This style of table is for simple qualitative tables (ie. mostly text in the table, not numbers, read on for making tables of numbers...): 
+ 
+ 
+| Tables        | Are           | Cool  |
+|---------------|:-------------:|------:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
  
-Here's a table of the radiocarbon dates... 
+
+Or we can make a table from our data, so the table will update when we update our data (a much better approach! Do this for any lab data you want to tabulate). For example:
+
 
 
 |  DirectAMS.code  |  Submitter.ID  |  OxCal.median  |  OxCal.sigma  |
@@ -78,61 +148,8 @@ Here's a table of the radiocarbon dates...
 
 Table: My great data
 
-### Chemical analyses
- 
-Brief description of how you measured pH, EC, SOM , CaCO~3~...
- 
-### Physical analyses 
- 
-Brief description of how you measured colour, magnetic suceptibility and particle size distributions...
- 
-## Results
- 
-Your one or two sentence summary observations of the most striking changes in the sedimentary sequence at the site...
- 
-### Chemical analyses
- 
-Now the details... pH, EC, SOM, CaCO~3~ e.g. The pH values ranged from 8.67 to 6.93...
-
-![here are the data!](figure/key-variables-stratigraphic-plot.png) 
-
- 
-### Physical analyses
-
-Particle size distributions... lots of possible plots here, chose wisely!
-
-![this is one plot](figure/psd-ternary-plot.png) 
 
 
-
-![this is one plot](figure/psd-plot-a-few-samples.png) 
-
-
-
-![this is one plot](figure/psd-strat-plot.png) 
-
-
-
-Magnetic susceptibilty values ranged from 3146 to 46...
- 
-![this is one plot](figure/LF-FD-biplot.png) 
-
- 
- 
-Loss on ignition data... 
- 
-You will probably want to have a table in your results, here's what you'd do for a simple table (it will look funny when you Knit HTML, but will look good in the PDF, which is what matters). This style of table is for simple qualitative tables (ie. mostly text in the table, not numbers, read on for making tables of numbers...):
- 
- 
- 
-| Tables        | Are           | Cool  |
-|---------------|:-------------:|------:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
- 
-Or we can make a table from our data, so the table will update when we update our data (a much better approach! Do this for any lab data you want to tabulate). For example:
  
 
 |  Sample.ID  |  mean.pH  |  mean.EC  |  mean.MS.LF  |  mean.MS.FD  |  mean.Organic  |  mean.CaCO3  |
@@ -232,21 +249,31 @@ You might just want to have a table of sediment munsell colour values...
 Table: My great data
 
  
-### Discussion
- 
-Here's where you describe the implications of your data in terms of:
- 
-1. Past human behaviours
-2. Past environments
-3. Site formation processes
- 
-You will need to draw on previously published studies to make new connections with your data. Show how your data support or contradict previous claims.
- 
-### References
- 
-Use APA style, look on [google scholar](http://scholar.google.com.offcampus.lib.washington.edu/) for the little 'cite' link that will generate nicely formatted references for you.
+And now Figures...
+
+![this is one plot](figure/dates-plot.png) 
 
 
+
+![here are the data!](figure/key-variables-stratigraphic-plot.png) 
+
+
+
+![this is one plot](figure/LF-FD-biplot.png) 
+
  
+
+![this is one plot](figure/psd-ternary-plot.png) 
+
+
+
+![this is one plot](figure/psd-plot-a-few-samples.png) 
+
+
+
+![this is one plot](figure/psd-strat-plot.png) 
+
+
+
 
 
