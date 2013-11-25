@@ -8,7 +8,7 @@ Maintainer: Ben Marwick <bmarwick@uw.edu>
 Description: Analysing and visualising geoarchaeology data collected by the UW
     ARCHY 482 & 486 class during Autumn 2013.
 License: MIT
-Depends:
+Suggests:
     RCurl,
     ggplot2,
     gridExtra,
