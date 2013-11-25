@@ -8,6 +8,10 @@ Maintainer: Ben Marwick <bmarwick@uw.edu>
 Description: Analysing and visualising geoarchaeology data collected by the UW
     ARCHY 482 & 486 class during Autumn 2013.
 License: GPL version 2 or newer
+Depends:
+    ggplot2,
+    gridExtra,
+    pander
 Suggests:
     RCurl,
     ggplot2,
@@ -16,7 +20,8 @@ Suggests:
     rioja,
     soiltexture,
     knitr,
-    markdown
+    markdown,
+    pander
 Collate:
     'biplot_with_correlation.r'
     'get_data.r'
