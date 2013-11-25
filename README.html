@@ -153,10 +153,12 @@ hr {
 <pre><code>install.packages(pkgs = &quot;devtools&quot;, dependencies = TRUE)
 </code></pre>
 
+<p>Windows users may also need to install <a href="http://cran.rstudio.com/bin/windows/Rtools/">Rtools</a> and Mac users may also need to install <a href="https://developer.apple.com/xcode/">Xcode</a>. These are installed outside of R. </p>
+
 <p>Then, use the <code>install_github()</code> function to fetch this package from github:</p>
 
 <pre><code>require(devtools)
-install_github(repo = &quot;au13uwgeoarchlab&quot;, username = &quot;UW-Georchaeology-Lab&quot;)
+install_github(repo = &quot;au13uwgeoarchlab&quot;, username = &quot;UW-Georchaeology-Lab&quot;, quick=TRUE)
 </code></pre>
 
 <p>Finally, attach the package to your R session like so, and get some basic information about it:</p>
@@ -170,7 +172,11 @@ ls(&quot;package:au13uwgeoarchlab&quot;)
 
 <h2>How to get started</h2>
 
-<p>Get the <a href="https://raw.github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/master/my_lab_report.Rmd">lab report template R Markdown file</a> by either right-clicking on the <a href="https://raw.github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/master/my_lab_report.Rmd">link</a> and saving as and Rmd file, or copying and pasting into a R markdown window in <a href="http://www.rstudio.com/ide/download/">RStudio</a>. Then study the lab report template carefully because it shows how all of the functions in this package should be used.</p>
+<p>Get the <a href="https://raw.github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/master/vignettes/vignette.Rmd">lab report template R Markdown file</a> by right-clicking on the <a href="https://raw.github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/master/vignettes/vignette.Rmd">link</a> and saving as an Rmd file to work on in <a href="http://www.rstudio.com/ide/download/">RStudio</a>. Then study the lab report template carefully because it shows how all of the functions in this package should be used. <a href="https://docs.google.com/viewer?url=https%3A%2F%2Fgithub.com%2FUW-Georchaeology-Lab%2Fau13uwgeoarchlab%2Fblob%2Fmaster%2Fvignettes%2Fvignette.pdf%3Fraw%3Dtrue">This</a> is what is looks like when it&#39;s working properly. </p>
+
+<h2>Solutions to common problems</h2>
+
+<p><code>Error: attempt to use zero-length variable name</code></p>
 
 <h2>Limitations and License</h2>
 
@@ -187,10 +193,6 @@ of the License, or (at your option) any later version.</p>
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.</p>
-
-<p>You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA. </p>
 
 </body>
 
