@@ -29,7 +29,9 @@ ls("package:au13uwgeoarchlab")
 
 How to get started
 ----
-Get the [lab report template R Markdown file](https://raw.github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/master/vignettes/vignette.Rmd) by either right-clicking on the [link](https://raw.github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/master/vignettes/vignette.Rmd) and saving as and Rmd file, or copying and pasting into a R markdown window in [RStudio][rstudio]. Then study the lab report template carefully because it shows how all of the functions in this package should be used.
+Get the [lab report template R Markdown file](https://raw.github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/master/vignettes/vignette.Rmd) by either right-clicking on the [link](https://raw.github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/master/vignettes/vignette.Rmd) and saving as an Rmd file to work on in [RStudio](http://www.rstudio.com/ide/download/). Then study the lab report template carefully because it shows how all of the functions in this package should be used. [This](http://htmlpreview.github.io/?https://github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/blob/master/vignettes/vignette.html) is what is looks like when it's working properly. 
+
+
 
 Limitations and License
 ----
@@ -47,10 +49,4 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA. 
-
-
-  [rstudio]:http://www.rstudio.com/ide/download/
   
