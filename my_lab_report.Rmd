@@ -1,0 +1,213 @@
+Title of your lab report
+========================================================
+ 
+ 
+## Introduction
+ 
+You are going to write your lab report as an R Markdown document. Markdown is a simple formatting syntax that is used to write plain text documents that can be created and edited in many different programs and easily converted into HTML and PDF. You should open and edit this document in RStudio, which has many useful features for writing markdown. To learn more, click the **Help** toolbar button for more details on using R Markdown. It should take you five minutes to learn all about Markdown that you need to know to write your lab report. If you want to spend more than five minutes, you can read the detailed syntax [here](http://daringfireball.net/projects/markdown/syntax). When you click the **Knit HTML** button in RStudio, a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+ 
+```{r input-all-data, echo = FALSE, message = FALSE, cache=TRUE}
+########### DO THIS FIRST !!! ##################################
+# this chunk connects to the google sheet and brings the data into
+# your R environment. All of the chunks below here assume that you've
+# done this one first
+require(au13uwgeoarchlab)
+my_data <- get_data()
+```
+ 
+## Background
+ 
+The reason why we are using this exotic format for our lab report is to learn about reproducible research. Reproducible research is an approach to science  that connects specific instructions to data analysis and empirical data so that scholarship can be recreated, better understood and verified. In practice, this means that all the results from a publication or report can be reproduced with the code and data available online. The advantages of this approach include:
+ 
+* We can automatically regenerate documents when our code, data, or assumptions change. For example if we do further analysis of our samples we can just add it on to this report. 
+* We minimize or eliminate transposition errors that occur when copying results (eg from Excel) into documents.
+* We preserve a detailed preserve contextual narrative about why analysis was performed in a certain fashion (ie. we don't have to search on our computer for all the files because everything is one file)
+* Documentation for the analytic and computational processes from which conclusions are drawn. In case anyone wants to know _all_ the details of our statistical methods, they can see them all in the code blocks here.
+ 
+Our specific tool-kit for reproducible research is a very common one: R + RStudio + Markdown. Although it's common, it has a bit of a steep learning curve. There's a lot of documentation and examples on the web that can ease the frustration. You may never (want to) write another document using this tool-kit ever again, but I think it's important that you have an understanding of this approach to doing science, in the hope that some of the ideas will rub off to improve any kind of empirical work that you might do in the future. This approach to doing science is becoming widespread in computer science and some areas of biology and psychology. I expect it's part of a general shift in the way all sciences will be done, and will come to archaeology eventually. 
+
+When you write your report you should delete the above text and use this section to write about archaeological sites and environmental records that are relevant to understanding our lab data.
+ 
+## Methods and Materials
+
+This would be a good place to mention the radiocarbon dates... Here's a plot...
+
+```{r dates-plot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='this is one plot'}
+require(au13uwgeoarchlab)
+plot_dates(my_data)
+```
+ 
+Here's a table of the radiocarbon dates... 
+
+```{r table-dates, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+require(pander)
+panderOptions('table.split.table', Inf)
+set.caption("My great data")
+table_data <- my_data[, c(
+                                     'DirectAMS.code',
+                                     'Submitter.ID',
+                                     'OxCal.median',
+                                     'OxCal.sigma')]
+pander(table_data, style = 'rmarkdown')
+```
+### Chemical analyses
+ 
+Brief description of how you measured pH, EC, SOM , CaCO~3~...
+ 
+### Physical analyses 
+ 
+Brief description of how you measured colour, magnetic suceptibility and particle size distributions...
+ 
+## Results
+ 
+Your one or two sentence summary observations of the most striking changes in the sedimentary sequence at the site...
+ 
+### Chemical analyses
+ 
+Now the details... pH, EC, SOM, CaCO~3~ e.g. The pH values ranged from `r max(my_data$mean.pH)` to `r min(my_data$mean.pH)`...
+
+```{r key-variables-stratigraphic-plot, echo=FALSE, message=FALSE, warnings=FALSE, fig.cap='here are the data!'}
+require(au13uwgeoarchlab)
+strat_plot_key_variables(my_data, c('Sample.ID',
+                                     'mean.pH',
+                                     'mean.EC',
+                                     'mean.MS.LF',
+                                     'mean.MS.FD',
+                                     'mean.Organic',
+                                     'mean.CaCO3'),
+                                     cluster = TRUE,
+                                     n = 3)
+```
+ 
+### Physical analyses
+
+Particle size distributions... lots of possible plots here, chose wisely!
+
+```{r psd-ternary-plot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='this is one plot'}
+# draw a triangle plot for all samples
+require(au13uwgeoarchlab)
+psd_ternary_plot(my_data)
+```
+
+
+```{r psd-plot-a-few-samples, echo=FALSE, message=FALSE, fig.cap='this is one plot'}
+require(au13uwgeoarchlab)
+require(gridExtra) # package to combine multiple plots on one view
+plot1 <- psd_plot_one_sample(my_data, 1.5) # change the number to chose a different sample
+plot2 <- psd_plot_one_sample(my_data, 3.4) # ditto 
+grid.arrange(plot1, plot2, ncol=1) # sets layout of vertical stack of plots
+```
+
+
+```{r psd-strat-plot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='this is one plot'}
+# draw a stratigraphic plot of three classes of particle sizes all samples
+require(au13uwgeoarchlab)
+psd_strat_plot(my_data)
+```
+
+
+Magnetic susceptibilty values ranged from `r round(max(na.omit(my_data$mean.MS.LF)),0)` to `r round(min(na.omit(my_data$mean.MS.LF)),0)`...
+ 
+```{r LF-FD-biplot, echo=FALSE, message=FALSE, fig.cap='this is one plot'}
+# Use this chunk as an example of how to make a biplot. You may want copy this 
+# chunk and put it elsewhere in your report to make a biplot of other 
+# variables, such as 'mean.Organic' and 'mean.MS.LF', just replace
+# them the function
+
+require(au13uwgeoarchlab)
+biplot_with_correlation(my_data, 'mean.pH', 'mean.Organic')
+```
+ 
+ 
+Loss on ignition data... 
+ 
+You will probably want to have a table in your results, here's what you'd do for a simple table (it will look funny when you Knit HTML, but will look good in the PDF, which is what matters). This style of table is for simple qualitative tables (ie. mostly text in the table, not numbers, read on for making tables of numbers...):
+ 
+ 
+```{r table-basic, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+tabl <- " 
+| Tables        | Are           | Cool  |
+|---------------|:-------------:|------:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+"
+cat(tabl)
+```
+ 
+Or we can make a table from our data, so the table will update when we update our data (a much better approach! Do this for any lab data you want to tabulate). For example:
+ 
+```{r table-data, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+require(pander)
+panderOptions('table.split.table', Inf)
+set.caption("My great data")
+table_data <- my_data[, c('Sample.ID',
+                                     'mean.pH',
+                                     'mean.EC',
+                                     'mean.MS.LF',
+                                     'mean.MS.FD',
+                                     'mean.Organic',
+                                     'mean.CaCO3')]
+pander(table_data, style = 'rmarkdown')
+```
+
+You might just want to have a table of sediment munsell colour values...
+
+```{r table-colour, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+require(pander)
+panderOptions('table.split.table', Inf)
+set.caption("My great data")
+table_data <- my_data[, c('Sample.ID',
+                                     'Dry.Color.ID',
+                                     'Dry.Color.nomenclature',
+                                     'Wet.Color.ID',
+                                     'Wet.Color.Nomenclature')]
+pander(table_data, style = 'rmarkdown')
+```
+ 
+### Discussion
+ 
+Here's where you describe the implications of your data in terms of:
+ 
+1. Past human behaviours
+2. Past environments
+3. Site formation processes
+ 
+You will need to draw on previously published studies to make new connections with your data. Show how your data support or contradict previous claims.
+ 
+### References
+ 
+Use APA style, look on [google scholar](http://scholar.google.com.offcampus.lib.washington.edu/) for the little 'cite' link that will generate nicely formatted references for you.
+
+
+ 
+```{r,  code-to-make-PDF, echo=FALSE, message=FALSE, eval=FALSE}
+print(sub(".*=", "", commandArgs()[4]))
+# This chunck is to run the code and generate the PDF
+# it will not appear in the PDF because we've set 'echo=FALSE' and
+# it will not run when you knit HTML because we've set 'eval=FALSE' so
+# you'll need to run this block line-by-line to get the PDF (save 
+# the file first!)
+ 
+# set working directory - you'll need to change this to the folder where 
+# you've saved this file that you're working on. Note the double-backslashes!
+wd <- "E:\\My Documents\\My UW\\Teaching\\2008 482 Geoarchaeology\\2013 Autumn 482 & 486\\AU13 482 & 486 Lab report"
+setwd(wd) # assumes wd has been set earlier in the line above
+ 
+# Load packages. By now you know you'll need to install these packages
+# the first time that you need them. 
+require(knitr)
+require(markdown)
+ 
+# Process this .Rmd and generate a .pdf file (including smart punctuation and grey background of code blocks)
+# For this step you'll need to have two other programs installed on your computer
+# 1. Pandoc: http://johnmacfarlane.net/pandoc/installing.html
+# 2. LaTeX: follow the instructions on the Pandoc download page
+ 
+filen <- "Lab_Report_template" # name of this markdown file without suffix
+knit(paste0(filen,".Rmd"))
+system(paste0("pandoc -s ", paste0(filen,".md"), " -t latex -o ", paste0(filen,".pdf"), " --highlight-style=tango  -S"))
+ 
+# Now find the location on your computer where the PDF file was created:
+getwd()
+```

@@ -1,0 +1,31 @@
+Package: au13uwgeoarchlab
+Type: Package
+Title: Analysing and visualising geoarchaeology data
+Version: 0.1
+Date: 2013-11-23
+Author: Ben Marwick
+Maintainer: Ben Marwick <bmarwick@uw.edu>
+Description: Analysing and visualising geoarchaeology data collected by the UW
+    ARCHY 482 & 486 class during Autumn 2013.
+License: MIT
+Depends:
+    RCurl,
+    ggplot2,
+    gridExtra,
+    reshape2,
+    rioja,
+    soiltexture,
+    knitr,
+    markdown
+Collate:
+    'biplot_with_correlation.r'
+    'get_data.r'
+    'interpolate_date.r'
+    'plot_dates.r'
+    'psd_plot_one_sample.r'
+    'psd_prep.r'
+    'psd_strat_plot.r'
+    'psd_ternary_plot.r'
+    'psd_three_classes.r'
+    'rmd_to_pdf.r'
+    'strat_plot_key_variables.r'
