@@ -1,3 +1,9 @@
+<!--
+%\VignetteEngine{knitr::knitr}
+%\VignetteIndexEntry{Display Tables with the DataTables Library}
+-->
+
+
 Title of your lab report
 ========================================================
  
