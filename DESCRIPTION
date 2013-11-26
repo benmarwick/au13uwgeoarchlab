@@ -16,7 +16,8 @@ Depends:
     rioja,
     knitr,
     markdown,
-    pander
+    pander, 
+    G2Sd
 VignetteBuilder: knitr
 Collate:
     'biplot_with_correlation.r'

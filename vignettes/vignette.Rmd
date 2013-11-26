@@ -154,6 +154,18 @@ table_data <- my_data[, c('Sample.ID',
 pander(table_data, style = 'rmarkdown')
 ```
  
+And a table summarising the particle size distributions
+
+
+```{r table-psd, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+require(pander)
+panderOptions('table.split.table', Inf)
+set.caption("My great data")
+require(au13uwgeoarchlab)
+my_psd_stats <- psd_stats(my_data, plot = FALSE)
+pander(my_psd_stats, style = 'rmarkdown')
+```
+
 And now Figures...
 
 ```{r dates-plot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='this is one plot'}
@@ -207,6 +219,12 @@ grid.arrange(plot1, plot2, ncol=1) # sets layout of vertical stack of plots
 # draw a stratigraphic plot of three classes of particle sizes all samples
 require(au13uwgeoarchlab)
 psd_strat_plot(my_data)
+```
+
+```{r psd-stats-plot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='this is one plot'}
+# draw a stratigraphic plot of some particle size summary stats
+require(au13uwgeoarchlab)
+my_psd_stats <- psd_stats(my_data, plot = TRUE)
 ```
 
 
