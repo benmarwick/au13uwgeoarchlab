@@ -31,3 +31,4 @@ Collate:
     'rmd_to_pdf.r'
     'soiltexture.R'
     'strat_plot_key_variables.r'
+    'psd_stats.r'

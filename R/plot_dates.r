@@ -14,7 +14,7 @@
 #' 
 #' @examples
 #'  my_data <- get_data()
-#'  my_date_plot <- plot_dates(my_data)
+#'  plot_dates(my_data)
   
 
 plot_dates <- function(my_data, ...){

@@ -58,7 +58,7 @@ biplot_with_correlation <- function(my_data, var1, var2, ...){
     # set the locations of the x-axis labels
     xlab(paste(var1," (r = ", round(cor(x,y),4),", p-value = ", 
                round(anova(lm(x~y
-               ))$'Pr(>F)'[1],4),")",sep="")) +      
+               ))$'Pr(>F)'[1],6),")",sep="")) +      
     # paste in the r and p values with the axis label
     scale_y_continuous(limit=c(min(y),
                                max(y)),
@@ -67,7 +67,7 @@ biplot_with_correlation <- function(my_data, var1, var2, ...){
     ylab(var2) +                   
     geom_text() + # specify that the data points are the sample names
     geom_rug(size=0.1) +   # specify that we want the rug plot
-    geom_smooth(aes(group = 1), method="lm", fill="grey80", alpha=0.05,
+    geom_smooth(aes(group = 1), method="lm", fill="grey70", alpha=0.05,
                 colour="grey50") + 
     # specify a line of best fit calculated by a linear model
     # fill is the colour of the standard error area
