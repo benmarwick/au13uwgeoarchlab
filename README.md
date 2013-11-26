@@ -1,7 +1,7 @@
 au13uwgeoarchlab
 ================
 
-Simple exploratory anayses and visualisation of geoarchaeological data for the UW ARCHY 482/486 Geoarchaeology class of Autumn 2013. The objective is to promote reproducible research in geoarchaeology by making the analyses explicit and supporting reporting of the results in a R Markdown file that includes text, figures, and the code that generated the results. 
+Simple exploratory analyses and visualization of geoarchaeological data for the UW ARCHY 482/486 Geoarchaeology class of Autumn 2013. The objective is to promote reproducible research in geoarchaeology by making the analyses explicit and supporting reporting of the results in a R Markdown file that includes text, figures, and the code that generated the results. 
 
 How to install
 ----
@@ -16,7 +16,7 @@ Then, use the `install_github()` function to fetch this package from github:
 
 ```
 require(devtools)
-install_github(repo = "au13uwgeoarchlab", username = "UW-Georchaeology-Lab", quick=TRUE)
+install_github(repo = "au13uwgeoarchlab", username = "UW-Geoarchaeology-Lab", quick=TRUE)
 ```
 
 Finally, attach the package to your R session like so, and get some basic information about it:
@@ -36,9 +36,9 @@ Get the [lab report template R Markdown file](https://raw.github.com/UW-Georchae
 Solutions to common problems
 ----
 Message: `Error: attempt to use zero-length variable name`
-Solution: You are probably trying to use a file name that has spaces or an unsual
+Solution: You are probably trying to use a file name that has spaces or an unusual
 character in it. Change your filename so it has no spaces and, ideally, 
-no puncutaiton that can be mistaken for a maths symbol (ie. no +, -, /. :, periods, etc.)
+no punctuation that can be mistaken for a maths symbol (ie. no +, -, /. :, periods, etc.)
 
 Message: `...had status 1`
 Solution: You probably have your PDF file open and R cannot overwrite the file
