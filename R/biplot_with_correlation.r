@@ -58,7 +58,7 @@ biplot_with_correlation <- function(my_data, var1, var2, ...){
     # set the locations of the x-axis labels
     xlab(paste(var1," (r = ", round(cor(x,y),4),", p-value = ", 
                round(anova(lm(x~y
-               ))$'Pr(>F)'[1],6),")",sep="")) +      
+               ))$'Pr(>F)'[1],10),")",sep="")) +      
     # paste in the r and p values with the axis label
     scale_y_continuous(limit=c(min(y),
                                max(y)),
