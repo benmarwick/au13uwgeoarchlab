@@ -235,6 +235,7 @@ my_psd_stats <- psd_stats(my_data, plot = TRUE)
 # it will not run when you knit HTML because we've set 'eval=FALSE' so
 # you'll need to run this block line-by-line to get the PDF (save 
 # the file first!)
+require(au13uwgeoarchlab)
 rmd_to_pdf("vignette",
            "C:/Users/marwick/Documents/GitHub/au13uwgeoarchlab/vignettes")
 # If you get an error about a '.Random.seed' not found', then go to the 

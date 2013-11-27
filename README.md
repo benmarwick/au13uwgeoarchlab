@@ -1,7 +1,7 @@
 au13uwgeoarchlab
 ================
 
-Simple exploratory analyses and visualization of geoarchaeological data for the UW ARCHY 482/486 Geoarchaeology class of Autumn 2013. The objective is to promote reproducible research in geoarchaeology by making the analyses explicit and supporting reporting of the results in a R Markdown file that includes text, figures, and the code that generated the results. 
+An [R](http://www.r-project.org/) package for simple exploratory analyses and visualization of geoarchaeological data for the UW ARCHY 482 & 486 Geoarchaeology class of Autumn 2013. The objective is to promote reproducible research in geoarchaeology by making the analyses explicit and by supporting reporting of the results in a R Markdown file that includes text, figures, and the code that generated the results. 
 
 How to install
 ----
@@ -53,10 +53,9 @@ Message: `Error: client error: (406) Not Acceptable` Solution: Try this instead:
 ```
 install.packages("installr")
 require(installr)
-install.packages.zip("https://github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/archive/master.zip")
+install.packages.zip("https://github.com/UW-Geoarchaeology-Lab/au13uwgeoarchlab/archive/master.zip")
 # ignore any messages after install.packages.zip
 require(au13uwgeoarchlab)
-# shouldn't get any errors here
 ```
 
 
