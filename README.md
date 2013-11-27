@@ -48,8 +48,7 @@ Message: `... .Random.seed ...`
 Solution: Go to the location of your markdown file and delete the folders called
 `cache` and `figure`, then try again
 
-Message: `Error: client error: (406) Not Acceptable` Solution: something is probably 
-wrong with the `devtools` package. Try this instead:
+Message: `Error: client error: (406) Not Acceptable` Solution: Try this instead:
 
 ```
 install.packages("installr")
