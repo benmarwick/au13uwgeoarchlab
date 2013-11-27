@@ -7,7 +7,7 @@ Author: Ben Marwick
 Maintainer: Ben Marwick <bmarwick@uw.edu>
 Description: Analysing and visualising geoarchaeology data collected by the UW
     ARCHY 482 & 486 class during Autumn 2013.
-License: GPL version 2 or newer
+License: MIT
 Depends:
     RCurl,
     ggplot2,
@@ -16,8 +16,7 @@ Depends:
     rioja,
     knitr,
     markdown,
-    pander,
-    G2Sd
+    pander
 VignetteBuilder: knitr
 Collate:
     'biplot_with_correlation.r'

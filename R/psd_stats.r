@@ -84,7 +84,7 @@ psd_stats <- function(my_data, plot = TRUE, n = 3, ...){
   # Definitions of the  terms used can be found here
   # http://cran.r-project.org/web/packages/G2Sd/G2Sd.pdf or by 
   # typing ?granstat at the R prompt
-  require(G2Sd)
+  #require(G2Sd)
   sink(tempfile())  # suppress cat messages
   stats <- as.data.frame(t(granstat(interp_table, statistic="all", aggr=TRUE, modes=FALSE)))
   sink() # suppress cat messages
