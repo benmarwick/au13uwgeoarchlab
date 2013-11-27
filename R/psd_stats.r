@@ -86,7 +86,7 @@ psd_stats <- function(my_data, plot = TRUE, n = 3, ...){
   # typing ?granstat at the R prompt
   #require(G2Sd)
   sink(tempfile())  # suppress cat messages
-  stats <- as.data.frame(t(granstat(interp_table, statistic="all", aggr=TRUE, modes=FALSE)))
+  # stats <- as.data.frame(t(granstat(interp_table, statistic="all", aggr=TRUE, modes=FALSE)))
   sink() # suppress cat messages
 
   # subset table 
