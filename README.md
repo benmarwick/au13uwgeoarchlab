@@ -55,6 +55,9 @@ wrong with the `devtools` package. Try this instead:
 install.packages("installr")
 require(installr)
 install.packages.zip("https://github.com/UW-Georchaeology-Lab/au13uwgeoarchlab/archive/master.zip")
+# ignore any messages after install.packages.zip
+require(au13uwgeoarchlab)
+# shouldn't get any errors here
 ```
 
 

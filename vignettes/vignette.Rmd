@@ -162,8 +162,8 @@ require(pander)
 panderOptions('table.split.table', Inf)
 set.caption("My great data")
 require(au13uwgeoarchlab)
-# my_psd_stats <- psd_stats(my_data, plot = FALSE)
-# pander(my_psd_stats, style = 'rmarkdown')
+my_psd_stats <- psd_stats(my_data, plot = FALSE)
+pander(my_psd_stats, style = 'rmarkdown')
 ```
 
 And now Figures...
@@ -224,7 +224,7 @@ psd_strat_plot(my_data)
 ```{r psd-stats-plot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='this is one plot'}
 # draw a stratigraphic plot of some particle size summary stats
 require(au13uwgeoarchlab)
-# my_psd_stats <- psd_stats(my_data, plot = TRUE)
+my_psd_stats <- psd_stats(my_data, plot = TRUE)
 ```
 
 
