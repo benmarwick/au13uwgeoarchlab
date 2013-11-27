@@ -16,7 +16,7 @@ Depends:
     rioja,
     knitr,
     markdown,
-    pander, 
+    pander,
     G2Sd
 VignetteBuilder: knitr
 Collate:
