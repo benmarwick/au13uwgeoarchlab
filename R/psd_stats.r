@@ -97,43 +97,43 @@ psd_stats <- function(my_data, plot = TRUE, n = 3, ...){
 
   
   # convert to data frame of numeric type
-  stats <- data.frame(apply(stats, 2, function(x) as.numeric(as.character(x))))
+ # stats <- data.frame(apply(stats, 2, function(x) as.numeric(as.character(x))))
   
   # give sensible row names
-  rownames(stats) <- as.numeric(unlist(regmatches( colnames(psd_t),gregexpr("[[:digit:]]+\\.*[[:digit:]]*", colnames(psd_t)))))
-
-  
-  if(plot){
-
-  #### slightly more fancy plot: with dendrogram showing groups of similar samples
-require(rioja)
-  # ?chclust # to get information how the clustering is done
-  # add a dendrogram from constrained cluster analysis
-  # coniss is a stratigraphically constrained cluster analysis by
-  # method of incremental sum of squares
-  diss <- dist(stats)
-  clust <- chclust(diss, method = "coniss")
-  # broken stick model to suggest significant zones, 3?
-  # bstick(clust)
-  # plot with clusters
-  # par(ask = T) # prompt for user
-  x <- strat.plot(stats,
-                  yvar = as.numeric(row.names(stats)),
-                  y.rev = TRUE,
-                  ylabel = "Depth below surface (m)",
-                  col.line = "black", # try others that you like
-                  lwd.line = 1,    # ditto
-                  clust = clust,
-  )
-  # add lines to indicate clusters, leave out if it looks odd
-  addClustZone(x, clust, n, col = "red")
-  } else { 
-    
-    x <- 0 # do nothing
-  
-  }
-  
-  
-  return(stats)
-  
+ # rownames(stats) <- as.numeric(unlist(regmatches( colnames(psd_t),gregexpr("[[:digit:]]+\\.*[[:digit:]]*", colnames(psd_t)))))
+# 
+#   
+#   if(plot){
+# 
+#   #### slightly more fancy plot: with dendrogram showing groups of similar samples
+# require(rioja)
+#   # ?chclust # to get information how the clustering is done
+#   # add a dendrogram from constrained cluster analysis
+#   # coniss is a stratigraphically constrained cluster analysis by
+#   # method of incremental sum of squares
+#   diss <- dist(stats)
+#   clust <- chclust(diss, method = "coniss")
+#   # broken stick model to suggest significant zones, 3?
+#   # bstick(clust)
+#   # plot with clusters
+#   # par(ask = T) # prompt for user
+#   x <- strat.plot(stats,
+#                   yvar = as.numeric(row.names(stats)),
+#                   y.rev = TRUE,
+#                   ylabel = "Depth below surface (m)",
+#                   col.line = "black", # try others that you like
+#                   lwd.line = 1,    # ditto
+#                   clust = clust,
+#   )
+#   # add lines to indicate clusters, leave out if it looks odd
+#   addClustZone(x, clust, n, col = "red")
+#   } else { 
+#     
+#     x <- 0 # do nothing
+#   
+#   }
+#   
+#   
+#   return(stats)
+#   
 }

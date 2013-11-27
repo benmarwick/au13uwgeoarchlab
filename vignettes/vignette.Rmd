@@ -162,8 +162,8 @@ require(pander)
 panderOptions('table.split.table', Inf)
 set.caption("My great data")
 require(au13uwgeoarchlab)
-my_psd_stats <- psd_stats(my_data, plot = FALSE)
-pander(my_psd_stats, style = 'rmarkdown')
+# my_psd_stats <- psd_stats(my_data, plot = FALSE)
+# pander(my_psd_stats, style = 'rmarkdown')
 ```
 
 And now Figures...
