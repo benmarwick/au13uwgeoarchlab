@@ -37,6 +37,11 @@
 
 strat_plot_key_variables <- function(my_data, list_of_variables, cluster = TRUE, n = 3, ...){
   
+  # only get rows with geoarch dat
+  
+  my_data <- my_data[!is.na(my_data$Sample.ID),]
+  
+  
 # subset key variables
   subs <- my_data[ ,colnames(my_data) %in% list_of_variables]
   
