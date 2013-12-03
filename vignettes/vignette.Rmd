@@ -16,7 +16,7 @@ Title of your lab report
  
 You are going to write your lab report as an R Markdown document. Markdown is a simple formatting syntax that is used to write plain text documents that can be created and edited in many different programs and easily converted into HTML and PDF. You should open and edit this document in RStudio, which has many useful features for writing markdown. To learn more, click the **Help** toolbar button for more details on using R Markdown. It should take you five minutes to learn all about Markdown that you need to know to write your lab report. If you want to spend more than five minutes, you can read the detailed syntax [here](http://daringfireball.net/projects/markdown/syntax). When you click the **Knit HTML** button in RStudio, a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
  
-```{r input-all-data, echo = FALSE, message = FALSE, cache=TRUE}
+```{r input-all-data, echo = FALSE, message = FALSE, cache=FALSE}
 ########### DO THIS FIRST !!! ##################################
 # this chunk connects to the google sheet and brings the data into
 # your R environment. All of the chunks below here assume that you've
@@ -45,7 +45,10 @@ the excavation report for details about the site and excavation methods.
 
 ### Chemical analyses
  
-Brief description of how you measured pH, EC, SOM , CaCO~3~...
+Brief description of how you measured pH, EC, SOM , CaCO~3~... The maximum value 
+of organics was `r max(my_data$mean.Organic)`% at `r my_data[which.max(my_data$mean.Organic),]$Sample.ID`
+
+The maximum value of carbonates was `r max(my_data$mean.CaCO3)`% at `r my_data[which.max(my_data$mean.CaCO3),]$Sample.ID`
  
 ### Physical analyses 
  
@@ -76,7 +79,7 @@ Here's where you describe the implications of your data in terms of:
 You will need to draw on previously published studies to make new connections with your data. Show how your data support or contradict previous claims.
 
 You may want to make some connection to a change in our variables at say, 
-sample 3.4 and other data from other sites. You'll want to refer to the age of sample 3.4, which you can compute like this, right in the middle of your sentence: "This substantial change in xxx occurs at about `r au13uwgeoarchlab::interpolate_date(my_data, 3.4)` cal years BP."
+sample 3.4 and other data from other sites. You'll want to refer to the age of sample 3.4, which you can compute like this, right in the middle of your sentence: "This substantial change in xxx occurs at about `r au13uwgeoarchlab::interpolate_date(my_data, 0.9)` cal years BP."
  
 ### References
  
@@ -188,7 +191,18 @@ strat_plot_key_variables(my_data, c('Sample.ID',
 ```
 
 
-```{r LF-FD-biplot, echo=FALSE, message=FALSE, fig.cap='this is one plot'}
+```{r finds-stratigraphic-plot2, echo=FALSE, message=FALSE, warnings=FALSE, fig.cap='here are the data!'}
+require(au13uwgeoarchlab)
+strat_plot_key_variables(my_data, c('Sample.ID',
+                                    'Lithic_mass_g',
+                                    'Freshwater_shell_mass_g', 
+                                    'Bone_teeth_mass_g'),
+                                     cluster = FALSE)
+```
+
+
+
+```{r LF-FD-biplot, echo=FALSE, message=FALSE, warnings=FALSE, fig.cap='this is one plot'}
 # Use this chunk as an example of how to make a biplot. You may want copy this 
 # chunk and put it elsewhere in your report to make a biplot of other 
 # variables, such as 'mean.Organic' and 'mean.MS.LF', just replace
@@ -196,6 +210,26 @@ strat_plot_key_variables(my_data, c('Sample.ID',
 
 require(au13uwgeoarchlab)
 biplot_with_correlation(my_data, 'mean.pH', 'mean.Organic')
+```
+
+```{r MS-lithic-biplot, echo=FALSE, message=FALSE, warnings=FALSE, fig.cap='this is one plot'}
+# Use this chunk as an example of how to make a biplot. You may want copy this 
+# chunk and put it elsewhere in your report to make a biplot of other 
+# variables, such as 'mean.Organic' and 'mean.MS.LF', just replace
+# them the function. To get a list of our variables, type: names(my_data)
+
+require(au13uwgeoarchlab)
+biplot_with_correlation(my_data, 'mean.MS.LF', 'Lithic_mass_g')
+```
+
+```{r carbonate-shell-biplot, echo=FALSE, message=FALSE, warnings=FALSE, fig.cap='this is one plot'}
+# Use this chunk as an example of how to make a biplot. You may want copy this 
+# chunk and put it elsewhere in your report to make a biplot of other 
+# variables, such as 'mean.Organic' and 'mean.MS.LF', just replace
+# them the function. To get a list of our variables, type: names(my_data)
+
+require(au13uwgeoarchlab)
+biplot_with_correlation(my_data, 'mean.CaCO3', 'Freshwater_shell_mass_g')
 ```
  
 

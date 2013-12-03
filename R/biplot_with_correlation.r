@@ -57,7 +57,7 @@ biplot_with_correlation <- function(my_data, var1, var2, ...){
   # names(df) <- c(var1, var2, "Sample.ID")
   
   require(ggplot2)
-  ggplot(df, aes(x, y, label = Sample.ID)) +        
+  suppressWarnings(print(ggplot(df, aes(x, y, label = Sample.ID)) +        
     # make the basic plot object
     scale_x_continuous(limit=c(min(x),
                                max(x)), 
@@ -94,7 +94,7 @@ biplot_with_correlation <- function(my_data, var1, var2, ...){
          # increase axis title size slightly and rotate
          axis.text.x=element_text(size=12),              
          # increase size of numbers on x-axis
-         axis.text.y=element_text(size=12))            
+         axis.text.y=element_text(size=12))  )  )    
   # increase size of numbers on y-axis
     
   

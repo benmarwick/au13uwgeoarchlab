@@ -37,7 +37,10 @@ the excavation report for details about the site and excavation methods.
 
 ### Chemical analyses
  
-Brief description of how you measured pH, EC, SOM , CaCO~3~...
+Brief description of how you measured pH, EC, SOM , CaCO~3~... The maximum value 
+of organics was 9.74% at 1.6
+
+The maximum value of carbonates was 33.8% at 0.9
  
 ### Physical analyses 
  
@@ -68,7 +71,7 @@ Here's where you describe the implications of your data in terms of:
 You will need to draw on previously published studies to make new connections with your data. Show how your data support or contradict previous claims.
 
 You may want to make some connection to a change in our variables at say, 
-sample 3.4 and other data from other sites. You'll want to refer to the age of sample 3.4, which you can compute like this, right in the middle of your sentence: "This substantial change in xxx occurs at about 12,560 cal years BP."
+sample 3.4 and other data from other sites. You'll want to refer to the age of sample 3.4, which you can compute like this, right in the middle of your sentence: "This substantial change in xxx occurs at about 4,800 cal years BP."
  
 ### References
  
@@ -106,19 +109,19 @@ Or we can make a table from our data, so the table will update when we update ou
 |:--------:|:----------------:|:--------------:|:--------------:|:-------------:|
 |  **1**   |   D-AMS 004027   |   SQB Spit 3   |      391       |      52       |
 |  **2**   |   D-AMS 004028   |   SQB Spit 8   |      3615      |      36       |
-|  **3**   |   D-AMS 004029   |  SQB Spit 10   |      4131      |      58       |
-|  **4**   |   D-AMS 004030   |  SQB Spit 14   |      4085      |      56       |
-|  **5**   |   D-AMS 004031   |  SQB Spit 16   |      4254      |      69       |
-|  **6**   |   D-AMS 004032   |  SQB Spit 20   |      4359      |      52       |
-|  **9**   |   D-AMS 004035   |  SQB Spit 31   |      6808      |      44       |
-|  **10**  |   D-AMS 004036   |  SQB Spit 36   |      7013      |      71       |
-|  **11**  |   D-AMS 004037   |  SQB Spit 45   |      7426      |      46       |
-|  **12**  |   D-AMS 004038   |  SQB Spit 53   |      8839      |      96       |
-|  **14**  |   D-AMS 004040   |  SQB Spit 56   |      9515      |      21       |
-|  **15**  |   D-AMS 004041   |  SQB Spit 61   |      4071      |      58       |
-|  **16**  |   D-AMS 004042   |  SQB Spit 64   |      9699      |      86       |
-|  **17**  |   D-AMS 004043   |  SQB Spit 71   |     19122      |      109      |
-|  **18**  |   D-AMS 004044   |  SQB Spit 73   |     13528      |      59       |
+|  **5**   |   D-AMS 004029   |  SQB Spit 10   |      4131      |      58       |
+|  **6**   |   D-AMS 004030   |  SQB Spit 14   |      4085      |      56       |
+|  **9**   |   D-AMS 004031   |  SQB Spit 16   |      4254      |      69       |
+|  **10**  |   D-AMS 004032   |  SQB Spit 20   |      4359      |      52       |
+|  **17**  |   D-AMS 004035   |  SQB Spit 31   |      6808      |      44       |
+|  **18**  |   D-AMS 004036   |  SQB Spit 36   |      7013      |      71       |
+|  **20**  |   D-AMS 004037   |  SQB Spit 45   |      7426      |      46       |
+|  **22**  |   D-AMS 004038   |  SQB Spit 53   |      8839      |      96       |
+|  **26**  |   D-AMS 004040   |  SQB Spit 56   |      9515      |      21       |
+|  **28**  |   D-AMS 004041   |  SQB Spit 61   |      4071      |      58       |
+|  **30**  |   D-AMS 004042   |  SQB Spit 64   |      9699      |      86       |
+|  **32**  |   D-AMS 004043   |  SQB Spit 71   |     19122      |      109      |
+|  **34**  |   D-AMS 004044   |  SQB Spit 73   |     13528      |      59       |
 
 Table: My great data
 
@@ -126,49 +129,49 @@ Table: My great data
 Don't forget to edit the table captions...
  
 
-|  Sample.ID  |  mean.pH  |  mean.EC  |  mean.MS.LF  |  mean.MS.FD  |  mean.Organic  |  mean.CaCO3  |
-|:-----------:|:---------:|:---------:|:------------:|:------------:|:--------------:|:------------:|
-|     0.1     |   7.53    |   514.3   |     2599     |     29.9     |      4.33      |     17.2     |
-|     0.2     |   8.63    |    139    |     2303     |    6.744     |      5.03      |    18.19     |
-|     0.3     |   8.03    |    115    |     2188     |    8.255     |      4.5       |    15.94     |
-|     0.4     |   8.27    |   182.7   |     2509     |     7.98     |      5.38      |    21.19     |
-|     0.5     |    8.2    |   223.3   |     1957     |    18.78     |      4.65      |    18.85     |
-|     0.6     |    8.6    |    164    |     2035     |    3.691     |      5.37      |    18.69     |
-|     0.7     |    8.1    |   116.7   |     2365     |    7.917     |      4.39      |    25.21     |
-|     0.8     |   8.27    |    171    |     2448     |    7.941     |      5.32      |     18.6     |
-|     0.9     |   8.37    |    212    |     2280     |    -13.93    |      4.71      |     33.8     |
-|      1      |   8.63    |   150.7   |     2365     |    15.36     |      4.8       |    21.26     |
-|     1.1     |    8.2    |   114.7   |     2294     |    7.832     |      4.26      |    19.57     |
-|     1.2     |   8.43    |   165.7   |     2200     |    8.033     |      4.38      |    21.23     |
-|     1.3     |    8.5    |    196    |     2427     |    12.93     |      4.08      |     18.8     |
-|     1.4     |   8.67    |   137.7   |     2489     |    25.23     |      4.17      |    18.07     |
-|     1.5     |    8.2    |   119.7   |     1780     |    7.009     |      2.94      |    26.12     |
-|     1.6     |    8.6    |   134.3   |     3146     |    6.134     |      9.74      |    17.32     |
-|     1.7     |    8.5    |   227.7   |     2145     |    -1.814    |      4.04      |    18.54     |
-|     1.8     |   8.53    |    142    |     2255     |    -7.703    |      4.26      |    18.84     |
-|     1.9     |    8.4    |   99.7    |     2370     |    7.553     |      4.92      |    17.46     |
-|      2      |   8.43    |    152    |     2487     |    7.485     |      3.23      |    20.23     |
-|     2.1     |    8.5    |   182.7   |     2217     |    15.92     |      3.94      |     17.5     |
-|     2.2     |   8.57    |    133    |     1924     |    -7.446    |      4.76      |    17.66     |
-|     2.3     |   8.33    |   90.7    |     2202     |    7.072     |      4.07      |    17.28     |
-|     2.4     |   8.37    |   130.7   |     2973     |    8.304     |      4.25      |    17.31     |
-|     2.5     |    8.5    |   180.7   |     2213     |    16.85     |      3.37      |    16.86     |
-|     2.6     |    8.5    |   132.7   |     2421     |     6.48     |      4.03      |     18.2     |
-|     2.7     |   8.13    |    107    |     2904     |    7.592     |      3.39      |    18.66     |
-|     2.8     |   8.17    |   123.3   |     2403     |    8.388     |      3.19      |    22.44     |
-|     2.9     |   8.57    |    170    |     2498     |    -2.439    |      3.22      |    22.08     |
-|      3      |    8.4    |   130.3   |     2306     |    -2.625    |      4.34      |    17.45     |
-|     3.1     |   8.03    |   102.7   |     2137     |    25.44     |      3.59      |    19.36     |
-|     3.2     |   7.97    |   214.3   |    845.1     |     8.97     |      7.3       |     3.76     |
-|     3.3     |    8.1    |   202.3   |    362.1     |    9.316     |      7.43      |     3.78     |
-|     3.4     |    8.3    |    103    |    167.7     |     7.65     |      7.04      |     4.03     |
-|     3.5     |    7.7    |   119.7   |    88.05     |    -9.524    |      7.02      |     4.1      |
-|     3.6     |   7.83    |    139    |    262.9     |    7.854     |      7.62      |     4.73     |
-|     3.7     |   6.93    |   120.7   |    45.75     |    12.93     |      6.78      |     3.94     |
-|     3.8     |    8.1    |   90.3    |    53.23     |    0.8621    |      6.3       |     4.2      |
-|     3.9     |   7.67    |    102    |    50.91     |    -24.1     |      7.21      |     4.16     |
-|      4      |   7.77    |    205    |    85.51     |    4.889     |      7.66      |     3.84     |
-|     4.1     |    7.1    |    183    |    123.1     |    -15.25    |      6.51      |     3.93     |
+|  &nbsp;  |  Sample.ID  |  mean.pH  |  mean.EC  |  mean.MS.LF  |  mean.MS.FD  |  mean.Organic  |  mean.CaCO3  |
+|:--------:|:-----------:|:---------:|:---------:|:------------:|:------------:|:--------------:|:------------:|
+|  **1**   |     0.1     |   7.53    |   514.3   |     2599     |     29.9     |      4.33      |     17.2     |
+|  **2**   |     0.2     |   8.63    |    139    |     2303     |    6.744     |      5.03      |    18.19     |
+|  **5**   |     0.3     |   8.03    |    115    |     2188     |    8.255     |      4.5       |    15.94     |
+|  **6**   |     0.4     |   8.27    |   182.7   |     2509     |     7.98     |      5.38      |    21.19     |
+|  **9**   |     0.5     |    8.2    |   223.3   |     1957     |    18.78     |      4.65      |    18.85     |
+|  **10**  |     0.6     |    8.6    |    164    |     2035     |    3.691     |      5.37      |    18.69     |
+|  **13**  |     0.7     |    8.1    |   116.7   |     2365     |    7.917     |      4.39      |    25.21     |
+|  **14**  |     0.8     |   8.27    |    171    |     2448     |    7.941     |      5.32      |     18.6     |
+|  **17**  |     0.9     |   8.37    |    212    |     2280     |    -13.93    |      4.71      |     33.8     |
+|  **18**  |      1      |   8.63    |   150.7   |     2365     |    15.36     |      4.8       |    21.26     |
+|  **20**  |     1.1     |    8.2    |   114.7   |     2294     |    7.832     |      4.26      |    19.57     |
+|  **22**  |     1.2     |   8.43    |   165.7   |     2200     |    8.033     |      4.38      |    21.23     |
+|  **25**  |     1.3     |    8.5    |    196    |     2427     |    12.93     |      4.08      |     18.8     |
+|  **26**  |     1.4     |   8.67    |   137.7   |     2489     |    25.23     |      4.17      |    18.07     |
+|  **28**  |     1.5     |    8.2    |   119.7   |     1780     |    7.009     |      2.94      |    26.12     |
+|  **30**  |     1.6     |    8.6    |   134.3   |     3146     |    6.134     |      9.74      |    17.32     |
+|  **32**  |     1.7     |    8.5    |   227.7   |     2145     |    -1.814    |      4.04      |    18.54     |
+|  **34**  |     1.8     |   8.53    |    142    |     2255     |    -7.703    |      4.26      |    18.84     |
+|  **37**  |     1.9     |    8.4    |   99.7    |     2370     |    7.553     |      4.92      |    17.46     |
+|  **38**  |      2      |   8.43    |    152    |     2487     |    7.485     |      3.23      |    20.23     |
+|  **40**  |     2.1     |    8.5    |   182.7   |     2217     |    15.92     |      3.94      |     17.5     |
+|  **43**  |     2.2     |   8.57    |    133    |     1924     |    -7.446    |      4.76      |    17.66     |
+|  **45**  |     2.3     |   8.33    |   90.7    |     2202     |    7.072     |      4.07      |    17.28     |
+|  **46**  |     2.4     |   8.37    |   130.7   |     2973     |    8.304     |      4.25      |    17.31     |
+|  **48**  |     2.5     |    8.5    |   180.7   |     2213     |    16.85     |      3.37      |    16.86     |
+|  **50**  |     2.6     |    8.5    |   132.7   |     2421     |     6.48     |      4.03      |     18.2     |
+|  **52**  |     2.7     |   8.13    |    107    |     2904     |    7.592     |      3.39      |    18.66     |
+|  **54**  |     2.8     |   8.17    |   123.3   |     2403     |    8.388     |      3.19      |    22.44     |
+|  **57**  |     2.9     |   8.57    |    170    |     2498     |    -2.439    |      3.22      |    22.08     |
+|  **58**  |      3      |    8.4    |   130.3   |     2306     |    -2.625    |      4.34      |    17.45     |
+|  **60**  |     3.1     |   8.03    |   102.7   |     2137     |    25.44     |      3.59      |    19.36     |
+|  **62**  |     3.2     |   7.97    |   214.3   |    845.1     |     8.97     |      7.3       |     3.76     |
+|  **66**  |     3.3     |    8.1    |   202.3   |    362.1     |    9.316     |      7.43      |     3.78     |
+|  **67**  |     3.4     |    8.3    |    103    |    167.7     |     7.65     |      7.04      |     4.03     |
+|  **69**  |     3.5     |    7.7    |   119.7   |    88.05     |    -9.524    |      7.02      |     4.1      |
+|  **71**  |     3.6     |   7.83    |    139    |    262.9     |    7.854     |      7.62      |     4.73     |
+|  **74**  |     3.7     |   6.93    |   120.7   |    45.75     |    12.93     |      6.78      |     3.94     |
+|  **76**  |     3.8     |    8.1    |   90.3    |    53.23     |    0.8621    |      6.3       |     4.2      |
+|  **79**  |     3.9     |   7.67    |    102    |    50.91     |    -24.1     |      7.21      |     4.16     |
+|  **80**  |      4      |   7.77    |    205    |    85.51     |    4.889     |      7.66      |     3.84     |
+|  **83**  |     4.1     |    7.1    |    183    |    123.1     |    -15.25    |      6.51      |     3.93     |
 
 Table: My great data
 
@@ -176,49 +179,49 @@ Table: My great data
 You might just want to have a table of sediment munsell colour values...
 
 
-|  Sample.ID  |  Dry.Color.ID  |  Dry.Color.nomenclature  |  Wet.Color.ID  |  Wet.Color.Nomenclature  |
-|:-----------:|:--------------:|:------------------------:|:--------------:|:------------------------:|
-|     0.1     |    10YR 3/6    |   dark yellowish brown   |    10YR 2/2    |     very dark brown      |
-|     0.2     |    10YR 3/6    |   dark yellowish brown   |    10YR 2/2    |     very dark brown      |
-|     0.3     |    5YR 3/3     |    dark reddish brown    |    10YR 3/4    |   dark yellowish brown   |
-|     0.4     |    10YR 2/2    |     very dark brown      |    10YR 2/2    |     very dark brown      |
-|     0.5     |   10 YR 3/3    |        dark brown        |    10YR 2/2    |     very dark brown      |
-|     0.6     |    10YR 3/3    |        dark brown        |    10YR 2/2    |     very dark brown      |
-|     0.7     |    10YR 2/2    |     very dark brown      |    10YR 2/2    |     very dark brown      |
-|     0.8     |    10YR 2/2    |     very dark brown      |    10YR 2/2    |     very dark brown      |
-|     0.9     |    10YR 2/2    |     very dark brown      |    10YR 3/2    | very dark greyish brown  |
-|      1      |    10YR 3/3    |        dark brown        |    10YR 3/2    | very dark greyish brown  |
-|     1.1     |    10YR 3/4    |   dark yellowish brown   |    5YR 3/2     |    dark reddish brown    |
-|     1.2     |    10YR 2/2    |     very dark brown      |    10YR 2/2    |     very dark brown      |
-|     1.3     |   5YR 2.5/2    |                          |   10 YR 2/2    |     very dark brown      |
-|     1.4     |    10YR 3/3    |        dark brown        |    10YR 3/2    | very dark greyish brown  |
-|     1.5     |    10YR 3/4    |   dark yellowish brown   |    10YR 3/6    |   dark yellowish brown   |
-|     1.6     |    10YR 2/2    |     very dark brown      |   10 YR 2/2    |     very dark brown      |
-|     1.7     |    10YR 2/2    |     very dark brown      |    10YR 2/2    |     very dark brown      |
-|     1.8     |    10YR 2/2    |     very dark brown      |    10YR 2/2    |     very dark brown      |
-|     1.9     |    5YR 3/3     |    dark reddish brown    |    10YR 3/4    |   dark yellowish brown   |
-|      2      |   5YR 2.5/2    |                          |   7.5YR 3/4    |                          |
-|     2.1     |  7.5YR 2.5/2   |                          |    10YR 2/2    |     very dark brown      |
-|     2.2     |    10YR 2/2    |     very dark brown      |    10YR 2/2    |     very dark brown      |
-|     2.3     |    10YR 3/4    |   dark yellowish brown   |    10YR 3/3    |   dark yellowish brown   |
-|     2.4     |    10YR 2/2    |     very dark brown      |    10YR 2/2    |     very dark brown      |
-|     2.5     |  7.5YR 2.5/2   |                          |  7.5YR 2.5/2   |                          |
-|     2.6     |    10YR 3/4    |   dark yellowish brown   |    10YR 3/2    | very dark greyish brown  |
-|     2.7     |    10YR 3/3    |        dark brown        |    10YR 4/3    |    brown / dark brown    |
-|     2.8     |   7.5YR 3/4    |                          |    5YR 3/2     |    dark reddish brown    |
-|     2.9     |  7.5YR 2.5/2   |                          |    10YR 3/4    |   dark yellowish brown   |
-|      3      |    10YR 3/6    |   dark yellowish brown   |    10YR 3/4    |   dark yellowish brown   |
-|     3.1     |   7.5YR 3/4    |        dark brown        |    10YR 3/4    |   dark yellowish brown   |
-|     3.2     |    10YR 4/4    |                          |    10YR 4/4    |                          |
-|     3.3     |    10YR 3/6    |   dark yellowish brown   |    10YR 4/6    |   dark yellowish brown   |
-|     3.4     |    10YR 4/6    |   dark yellowish brown   |    10YR 4/6    |   dark yellowish brown   |
-|     3.5     |    10YR 4/6    |   dark yellowish brown   |    10YR 5/8    |     yellowish brown      |
-|     3.6     |    10YR 4/4    |                          |    10YR 4/4    |                          |
-|     3.7     |   7.5YR 3/4    |        dark brown        |    10YR 4/6    |   dark yellowish brown   |
-|     3.8     |    10YR 4/4    |   dark yellowish brown   |    10YR 4/6    |   dark yellowish brown   |
-|     3.9     |    10YR 3/6    |   dark yellowish brown   |    10YR 3/6    |   dark yellowish brown   |
-|      4      |  7.5YR 2.5/3   |     very dark brown      |    10YR 3/4    |   dark yellowish brown   |
-|     4.1     |    10YR 3/3    |        dark brown        |    10YR 3/4    |   dark yellowish brown   |
+|  &nbsp;  |  Sample.ID  |  Dry.Color.ID  |  Dry.Color.nomenclature  |  Wet.Color.ID  |  Wet.Color.Nomenclature  |
+|:--------:|:-----------:|:--------------:|:------------------------:|:--------------:|:------------------------:|
+|  **1**   |     0.1     |    10YR 3/6    |   dark yellowish brown   |    10YR 2/2    |     very dark brown      |
+|  **2**   |     0.2     |    10YR 3/6    |   dark yellowish brown   |    10YR 2/2    |     very dark brown      |
+|  **5**   |     0.3     |    5YR 3/3     |    dark reddish brown    |    10YR 3/4    |   dark yellowish brown   |
+|  **6**   |     0.4     |    10YR 2/2    |     very dark brown      |    10YR 2/2    |     very dark brown      |
+|  **9**   |     0.5     |   10 YR 3/3    |        dark brown        |    10YR 2/2    |     very dark brown      |
+|  **10**  |     0.6     |    10YR 3/3    |        dark brown        |    10YR 2/2    |     very dark brown      |
+|  **13**  |     0.7     |    10YR 2/2    |     very dark brown      |    10YR 2/2    |     very dark brown      |
+|  **14**  |     0.8     |    10YR 2/2    |     very dark brown      |    10YR 2/2    |     very dark brown      |
+|  **17**  |     0.9     |    10YR 2/2    |     very dark brown      |    10YR 3/2    | very dark greyish brown  |
+|  **18**  |      1      |    10YR 3/3    |        dark brown        |    10YR 3/2    | very dark greyish brown  |
+|  **20**  |     1.1     |    10YR 3/4    |   dark yellowish brown   |    5YR 3/2     |    dark reddish brown    |
+|  **22**  |     1.2     |    10YR 2/2    |     very dark brown      |    10YR 2/2    |     very dark brown      |
+|  **25**  |     1.3     |   5YR 2.5/2    |                          |   10 YR 2/2    |     very dark brown      |
+|  **26**  |     1.4     |    10YR 3/3    |        dark brown        |    10YR 3/2    | very dark greyish brown  |
+|  **28**  |     1.5     |    10YR 3/4    |   dark yellowish brown   |    10YR 3/6    |   dark yellowish brown   |
+|  **30**  |     1.6     |    10YR 2/2    |     very dark brown      |   10 YR 2/2    |     very dark brown      |
+|  **32**  |     1.7     |    10YR 2/2    |     very dark brown      |    10YR 2/2    |     very dark brown      |
+|  **34**  |     1.8     |    10YR 2/2    |     very dark brown      |    10YR 2/2    |     very dark brown      |
+|  **37**  |     1.9     |    5YR 3/3     |    dark reddish brown    |    10YR 3/4    |   dark yellowish brown   |
+|  **38**  |      2      |   5YR 2.5/2    |                          |   7.5YR 3/4    |                          |
+|  **40**  |     2.1     |  7.5YR 2.5/2   |                          |    10YR 2/2    |     very dark brown      |
+|  **43**  |     2.2     |    10YR 2/2    |     very dark brown      |    10YR 2/2    |     very dark brown      |
+|  **45**  |     2.3     |    10YR 3/4    |   dark yellowish brown   |    10YR 3/3    |   dark yellowish brown   |
+|  **46**  |     2.4     |    10YR 2/2    |     very dark brown      |    10YR 2/2    |     very dark brown      |
+|  **48**  |     2.5     |  7.5YR 2.5/2   |                          |  7.5YR 2.5/2   |                          |
+|  **50**  |     2.6     |    10YR 3/4    |   dark yellowish brown   |    10YR 3/2    | very dark greyish brown  |
+|  **52**  |     2.7     |    10YR 3/3    |        dark brown        |    10YR 4/3    |    brown / dark brown    |
+|  **54**  |     2.8     |   7.5YR 3/4    |                          |    5YR 3/2     |    dark reddish brown    |
+|  **57**  |     2.9     |  7.5YR 2.5/2   |                          |    10YR 3/4    |   dark yellowish brown   |
+|  **58**  |      3      |    10YR 3/6    |   dark yellowish brown   |    10YR 3/4    |   dark yellowish brown   |
+|  **60**  |     3.1     |   7.5YR 3/4    |        dark brown        |    10YR 3/4    |   dark yellowish brown   |
+|  **62**  |     3.2     |    10YR 4/4    |                          |    10YR 4/4    |                          |
+|  **66**  |     3.3     |    10YR 3/6    |   dark yellowish brown   |    10YR 4/6    |   dark yellowish brown   |
+|  **67**  |     3.4     |    10YR 4/6    |   dark yellowish brown   |    10YR 4/6    |   dark yellowish brown   |
+|  **69**  |     3.5     |    10YR 4/6    |   dark yellowish brown   |    10YR 5/8    |     yellowish brown      |
+|  **71**  |     3.6     |    10YR 4/4    |                          |    10YR 4/4    |                          |
+|  **74**  |     3.7     |   7.5YR 3/4    |        dark brown        |    10YR 4/6    |   dark yellowish brown   |
+|  **76**  |     3.8     |    10YR 4/4    |   dark yellowish brown   |    10YR 4/6    |   dark yellowish brown   |
+|  **79**  |     3.9     |    10YR 3/6    |   dark yellowish brown   |    10YR 3/6    |   dark yellowish brown   |
+|  **80**  |      4      |  7.5YR 2.5/3   |     very dark brown      |    10YR 3/4    |   dark yellowish brown   |
+|  **83**  |     4.1     |    10YR 3/3    |        dark brown        |    10YR 3/4    |   dark yellowish brown   |
 
 Table: My great data
 
@@ -229,36 +232,47 @@ And a table summarising the particle size distributions
 
 |  &nbsp;   |  mean.arith.um  |  sd.arith.um  |  skewness.arith.um  |  kurtosis.arith.um  |
 |:---------:|:---------------:|:-------------:|:-------------------:|:-------------------:|
+|  **0.1**  |      512.7      |     548.5     |        0.912        |        2.575        |
 |  **0.2**  |      250.6      |     318.9     |        2.814        |        11.9         |
 |  **0.3**  |      346.5      |     386.1     |        1.902        |        6.535        |
 |  **0.4**  |      363.5      |     455.1     |        1.829        |        5.491        |
+|  **0.5**  |      356.3      |     405.2     |        1.822        |        6.014        |
 |  **0.6**  |      304.4      |     376.2     |        2.277        |        8.149        |
 |  **0.7**  |      337.6      |      429      |        1.866        |        5.865        |
 |  **0.8**  |      347.8      |     458.6     |        1.794        |        5.319        |
+|  **0.9**  |      287.1      |     393.2     |        2.266        |        7.775        |
 |   **1**   |      296.6      |     385.6     |        2.352        |        8.31         |
 |  **1.1**  |       581       |     572.6     |        0.792        |        2.32         |
 |  **1.2**  |      228.6      |     351.5     |        2.922        |        11.45        |
+|  **1.3**  |      272.3      |      429      |        2.389        |        7.734        |
 |  **1.4**  |      270.5      |     370.9     |        2.561        |        9.423        |
 |  **1.5**  |      406.5      |      448      |        1.684        |        5.091        |
 |  **1.6**  |      327.5      |     420.1     |        2.037        |        6.54         |
+|  **1.7**  |      588.6      |     670.6     |        0.718        |        1.821        |
 |  **1.8**  |      351.1      |     439.2     |        1.923        |        5.948        |
 |  **1.9**  |      382.6      |     448.2     |        1.819        |        5.54         |
 |   **2**   |       318       |     420.6     |        2.159        |        7.023        |
+|  **2.1**  |      564.8      |     664.4     |        0.787        |        1.931        |
 |  **2.2**  |      406.1      |     493.9     |        1.649        |        4.609        |
 |  **2.3**  |      463.7      |     493.5     |        1.422        |        4.005        |
 |  **2.4**  |       477       |     618.9     |        1.181        |        2.717        |
+|  **2.5**  |      476.5      |     595.5     |        1.205        |        2.901        |
 |  **2.6**  |      405.6      |     531.4     |        1.558        |        4.081        |
 |  **2.7**  |      594.8      |     606.8     |        0.873        |        2.28         |
 |  **2.8**  |      383.2      |     518.5     |        1.645        |        4.391        |
+|  **2.9**  |      447.7      |      581      |        1.309        |        3.199        |
 |   **3**   |      463.2      |     568.9     |        1.291        |        3.227        |
 |  **3.1**  |      607.1      |     659.8     |        0.748        |        1.919        |
 |  **3.2**  |      186.2      |     384.5     |        3.343        |        12.91        |
+|  **3.3**  |      130.6      |      274      |        4.839        |        26.39        |
 |  **3.4**  |      136.6      |     285.3     |        4.678        |        24.65        |
 |  **3.5**  |      126.2      |     258.4     |        5.215        |        30.59        |
 |  **3.6**  |      162.6      |     341.2     |        3.874        |        17.07        |
+|  **3.7**  |      110.8      |     212.4     |        6.221        |        44.1         |
 |  **3.8**  |       142       |     291.9     |        4.513        |        23.08        |
 |  **3.9**  |      185.2      |     371.9     |        3.355        |        13.17        |
 |   **4**   |      316.1      |     530.1     |        1.924        |        5.091        |
+|  **4.1**  |      122.9      |     250.4     |        5.43         |        33.08        |
 
 Table: My great data
 
@@ -273,7 +287,18 @@ And now Figures...
 
 
 
+![here are the data!](figure/finds-stratigraphic-plot2.png) 
+
+
+
+
 ![this is one plot](figure/LF-FD-biplot.png) 
+
+
+![this is one plot](figure/MS-lithic-biplot.png) 
+
+
+![this is one plot](figure/carbonate-shell-biplot.png) 
 
  
 
