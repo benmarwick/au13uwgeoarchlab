@@ -46,9 +46,9 @@ the excavation report for details about the site and excavation methods.
 ### Chemical analyses
  
 Brief description of how you measured pH, EC, SOM , CaCO~3~... The maximum value 
-of organics was `r max(my_data$mean.Organic)`% at `r my_data[which.max(my_data$mean.Organic),]$Sample.ID`
+of organics was `r max(my_data$mean.Organic)`% at `r my_data[which.max(my_data$mean.Organic),]$Sample.ID`m below the surface
 
-The maximum value of carbonates was `r max(my_data$mean.CaCO3)`% at `r my_data[which.max(my_data$mean.CaCO3),]$Sample.ID`
+The maximum value of carbonates was `r max(my_data$mean.CaCO3)`% at `r my_data[which.max(my_data$mean.CaCO3),]$Sample.ID`m below the surface
  
 ### Physical analyses 
  

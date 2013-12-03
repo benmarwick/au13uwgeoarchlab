@@ -38,9 +38,9 @@ the excavation report for details about the site and excavation methods.
 ### Chemical analyses
  
 Brief description of how you measured pH, EC, SOM , CaCO~3~... The maximum value 
-of organics was 9.74% at 1.6
+of organics was 9.74% at 1.6m below the surface
 
-The maximum value of carbonates was 33.8% at 0.9
+The maximum value of carbonates was 33.8% at 0.9m below the surface
  
 ### Physical analyses 
  
