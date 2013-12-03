@@ -34,6 +34,10 @@ get_data <- function(){
   names(data)[names(data) == 'LOI.percent.organic.material..Average'] <- 'mean.Organic'
   names(data)[names(data) == 'LOI.Percent.carbonate.content..Average'] <- 'mean.CaCO3'
   
+  # only get rows with geoarch dat
+  
+  data <- data[!is.na(data$Sample.ID),]
+  
 
   return(data)
   

@@ -44,6 +44,10 @@
 
 biplot_with_correlation <- function(my_data, var1, var2, ...){
   
+  # only get rows with geoarch dat
+  
+  my_data <- my_data[!is.na(my_data$Sample.ID),]
+  
   x <- my_data[,names(my_data) %in% var1]
   y <- my_data[,names(my_data) %in% var2]
   df <- data.frame(x = x, y = y, Sample.ID = my_data$Sample.ID)
@@ -58,7 +62,7 @@ biplot_with_correlation <- function(my_data, var1, var2, ...){
     # set the locations of the x-axis labels
     xlab(paste(var1," (r = ", round(cor(x,y),4),", p-value = ", 
                round(anova(lm(x~y
-               ))$'Pr(>F)'[1],10),")",sep="")) +      
+               ))$'Pr(>F)'[1],5),")",sep="")) +      
     # paste in the r and p values with the axis label
     scale_y_continuous(limit=c(min(y),
                                max(y)),
