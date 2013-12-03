@@ -44,6 +44,9 @@
 
 biplot_with_correlation <- function(my_data, var1, var2, ...){
   
+#   # get geoarch table
+#   my_data <- my_data[[1]]
+  
   # only get rows with geoarch dat
   
   my_data <- my_data[!is.na(my_data$Sample.ID),]

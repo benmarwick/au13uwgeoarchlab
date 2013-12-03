@@ -34,11 +34,32 @@ get_data <- function(){
   names(data)[names(data) == 'LOI.percent.organic.material..Average'] <- 'mean.Organic'
   names(data)[names(data) == 'LOI.Percent.carbonate.content..Average'] <- 'mean.CaCO3'
   
-  # only get rows with geoarch dat
+  # only get geoarch dat
   
-  data <- data[!is.na(data$Sample.ID),]
+  geoarch <- data[!is.na(data$Sample.ID),1:174]
   
-
-  return(data)
+  # only get archaeological data
+  
+  # subset just sq B
+  sqB <- data[data$square == "B", 176:242]
+  # convert all to numeric
+  sqB <- suppressWarnings(data.frame(apply(sqB, 2, as.numeric, as.character)))
+  # replace NA with zero
+  sqB[is.na(sqB)] <- 0
+  # put in order by spit
+  sqB <- with(sqB, sqB[order(spit), ])
+  # combine teeth and bone masses from sq B
+  sqB$Teeth_mass_g[is.na(sqB$Teeth_mass_g)] <- 0
+  sqB$Bone_teeth_mass_g <- with(sqB, Teeth_mass_g + Bone_Bulk_mass_g)
+  # approximate depth to make comparable to geoarch data
+  # need to update this with real depth data from the spit sheets
+  sqB$depth <- round((sqB$spit * 0.05), 1)
+  
+  # merge geoarch data with finds data by depth below surface
+  xx <- merge(geoarch, sqB, by.x = 'Sample.ID', by.y = 'depth', all.x = TRUE)
+  # remove dupoicate lines where finds have multiple matches with one depth
+  xx <- xx[!duplicated(xx$Sample.ID), ]
+  
+  return(xx)
   
 }

@@ -15,6 +15,9 @@
 
 psd_prep <- function(my_data, ...){
   
+#   # get geoarch table
+#   my_data <- my_data[[1]]
+  
   # subset just the sieve and pipette data for geoarch samples
   psd <- my_data[!is.na(my_data$Sample.ID), names(my_data) %in% c("Sample.ID",
                                    "percent.mass.of.total.used.for.pipetting.in.5.6.mm.screen..g.",                                  

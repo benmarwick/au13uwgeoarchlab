@@ -32,3 +32,4 @@ Collate:
     'soiltexture.R'
     'strat_plot_key_variables.r'
     'psd_stats.r'
+    'get_finds_data.r'

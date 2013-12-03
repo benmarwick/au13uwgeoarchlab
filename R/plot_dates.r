@@ -46,6 +46,10 @@ plot_dates <- function(my_data, ...){
 # then click File -> Run, then File -> Save As to get calibrated dates in a CSV
 # add data from downloaded CSV to google docs (already done!)
 # subset dates data from main data
+  
+#   # get geoarch table
+#   my_data <- my_data[[1]]
+  
 dates <- na.omit(my_data[,c("DirectAMS.code",                                                                              
                          "Submitter.ID" ,                                                                                  
                          "d.13C..per.mil",                                                                                
