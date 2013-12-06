@@ -258,7 +258,7 @@ grid.arrange(plot1, plot2, ncol=1) # sets layout of vertical stack of plots
 ```{r psd-strat-plot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='this is one plot'}
 # draw a stratigraphic plot of three classes of particle sizes all samples
 require(au13uwgeoarchlab)
-psd_strat_plot(my_data)
+psd_strat_plot(my_data, scale.percent =TRUE)
 ```
 
 ```{r psd-stats-plot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='this is one plot'}

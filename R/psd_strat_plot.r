@@ -55,6 +55,7 @@ psd_strat_plot <-  function(my_data,  cluster = TRUE, n = 3, ...){
                     col.line = "black", # try others that you like
                     lwd.line = 1,    # ditto
                     clust = clust,
+                    ...
     )
     # add lines to indicate clusters, leave out if it looks odd
     addClustZone(x, clust, n, col = "red")
