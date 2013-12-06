@@ -60,6 +60,9 @@ psd_prep <- function(my_data, ...){
   colnames(psd_t) <- psd$Sample.ID
   psd_t  <- data.frame(psd_t[-1,])
   psd_t$size <- psd_size
+  # get abosute values as a kludge to deal with -ve 
+  # values from lab error
+  psd_t <- abs(psd_t)
   
 return (psd_t)
   

@@ -104,7 +104,7 @@ Here's what you'd do for a simple table. This style of table is for simple quali
 require(pander)
 panderOptions('table.split.table', Inf)
 set.caption("My great data")
-my.data <- " # replace the green text below with your table data
+my.data <- " 
   Tables        | Are           | Cool
   col 3 is      | right-aligned | $1600 
   col 2 is      | centered      |   $12 
@@ -258,7 +258,7 @@ grid.arrange(plot1, plot2, ncol=1) # sets layout of vertical stack of plots
 ```{r psd-strat-plot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='this is one plot'}
 # draw a stratigraphic plot of three classes of particle sizes all samples
 require(au13uwgeoarchlab)
-psd_strat_plot(my_data, scale.percent =TRUE)
+psd_strat_plot(my_data, scale.percent = TRUE)
 ```
 
 ```{r psd-stats-plot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='this is one plot'}
