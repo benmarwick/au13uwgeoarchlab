@@ -48,7 +48,7 @@ the excavation report for details about the site and excavation methods.
 Brief description of how you measured pH, EC, SOM , CaCO~3~... The maximum value 
 of organics was `r max(my_data$mean.Organic)`% at `r my_data[which.max(my_data$mean.Organic),]$Sample.ID`m below the surface
 
-The maximum value of carbonates was `r max(my_data$mean.CaCO3)`% at `r my_data[which.max(my_data$mean.CaCO3),]$Sample.ID`m below the surface
+The maximum value of carbonates was `r max(my_data$mean.CaCO3)`% at `r my_data[which.max(my_data$mean.CaCO3),]$Sample.ID`m below the surface, approximately `r au13uwgeoarchlab::interpolate_date(my_data, my_data[which.max(my_data$mean.CaCO3),]$Sample.ID)` BP 
  
 ### Physical analyses 
  
@@ -79,7 +79,7 @@ Here's where you describe the implications of your data in terms of:
 You will need to draw on previously published studies to make new connections with your data. Show how your data support or contradict previous claims.
 
 You may want to make some connection to a change in our variables at say, 
-sample 3.4 and other data from other sites. You'll want to refer to the age of sample 3.4, which you can compute like this, right in the middle of your sentence: "This substantial change in xxx occurs at about `r au13uwgeoarchlab::interpolate_date(my_data, 0.9)` cal years BP."
+sample 3.4 and other data from other sites. You'll want to refer to the age of sample 3.4, which you can compute like this, right in the middle of your sentence: "This substantial change in xxx occurs at about `r au13uwgeoarchlab::interpolate_date(my_data, 0.7)` cal years BP."
  
 ### References
  
@@ -100,16 +100,22 @@ Tables first...
 
 Here's what you'd do for a simple table. This style of table is for simple qualitative tables (ie. mostly text in the table, not numbers, read on for making tables of numbers...): 
  
-```{r table-basic, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
-tabl <- " 
-| Tables        | Are           | Cool  |
-|---------------|:-------------:|------:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-"
-cat(tabl)
+```{r table-simple, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+require(pander)
+panderOptions('table.split.table', Inf)
+set.caption("My great data")
+my.data <- " # replace the green text below with your table data
+  Tables        | Are           | Cool
+  col 3 is      | right-aligned | $1600 
+  col 2 is      | centered      |   $12 
+  zebra stripes | are neat      |    $1"
+df <- read.delim(textConnection(my.data),header=FALSE,sep="|",strip.white=TRUE,stringsAsFactors=FALSE)
+names(df) <- unname(as.list(df[1,])) # put headers on
+df <- df[-1,] # remove first row
+row.names(df)<-NULL
+pander(df, style = 'rmarkdown')
 ```
+ 
  
 
 Or we can make a table from our data, so the table will update when we update our data (a much better approach! Do this for any lab data you want to tabulate). For example:

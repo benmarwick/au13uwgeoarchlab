@@ -40,7 +40,7 @@ the excavation report for details about the site and excavation methods.
 Brief description of how you measured pH, EC, SOM , CaCO~3~... The maximum value 
 of organics was 9.74% at 1.6m below the surface
 
-The maximum value of carbonates was 33.8% at 0.9m below the surface
+The maximum value of carbonates was 33.8% at 0.9m below the surface, approximately 4,800 BP 
  
 ### Physical analyses 
  
@@ -71,7 +71,7 @@ Here's where you describe the implications of your data in terms of:
 You will need to draw on previously published studies to make new connections with your data. Show how your data support or contradict previous claims.
 
 You may want to make some connection to a change in our variables at say, 
-sample 3.4 and other data from other sites. You'll want to refer to the age of sample 3.4, which you can compute like this, right in the middle of your sentence: "This substantial change in xxx occurs at about 4,800 cal years BP."
+sample 3.4 and other data from other sites. You'll want to refer to the age of sample 3.4, which you can compute like this, right in the middle of your sentence: "This substantial change in xxx occurs at about 4,050 cal years BP."
  
 ### References
  
@@ -92,13 +92,13 @@ Tables first...
 
 Here's what you'd do for a simple table. This style of table is for simple qualitative tables (ie. mostly text in the table, not numbers, read on for making tables of numbers...): 
  
- 
-| Tables        | Are           | Cool  |
-|---------------|:-------------:|------:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
 
+```
+## Error: Pandoc does not support newlines in simple or Rmarkdown table
+## format!
+```
+
+ 
  
 
 Or we can make a table from our data, so the table will update when we update our data (a much better approach! Do this for any lab data you want to tabulate). For example:
