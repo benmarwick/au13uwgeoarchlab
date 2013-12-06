@@ -79,7 +79,8 @@ if(cluster){
                   col.line = "black", # try others that you like
                   lwd.line = 1,    # ditto
                   clust = clust,
-                  ...)
+                  ...
+                  )
   # add lines to indicate clusters, leave out if it looks odd
   addClustZone(x, clust, n, col = "red")
   
@@ -92,7 +93,8 @@ if(cluster){
                     y.rev = TRUE, 
                     ylabel = "Depth below surface (m)", 
                     col.line = "black", # try others that you like
-                    lwd.line = 1 )
+                    lwd.line = 1,
+                    ...)
   
 
   

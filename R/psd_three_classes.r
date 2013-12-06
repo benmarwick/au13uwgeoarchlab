@@ -32,8 +32,8 @@ psd_three_classes <- function(my_data,  ...){
   # silt: 62.5 - 4 um
   # clay: < 4 um
   
-  sand <- colSums(psd_t[ psd_t$size >= 62.5 & psd_t$size < 2000, ] ) 
-  silt <- colSums(psd_t[ psd_t$size >= 4 & psd_t$size < 62.5, ] ) 
+  sand <- colSums(psd_t[ psd_t$size > 62.5 & psd_t$size < 2000, ] ) 
+  silt <- colSums(psd_t[ psd_t$size >= 4 & psd_t$size <= 62.5, ] ) 
   clay <- colSums(psd_t[ psd_t$size >= 0 & psd_t$size < 4, ] )
   
   # combine into one data frame

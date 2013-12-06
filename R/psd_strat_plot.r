@@ -73,7 +73,7 @@ psd_strat_plot <-  function(my_data,  cluster = TRUE, n = 3, ...){
              ylabel = "Depth below surface (m)", 
              col.line = "black", # try others that you like
              lwd.line = 1,
-             scale.percent=TRUE)
+                  ...)
   
   }
  
