@@ -6,6 +6,9 @@
 #' 
 #' @param my_data The data frame that resutled from running the get_data function
 #' 
+#' @param se draw the standard error area in the plot? Default in TRUE. To turn 
+#' off the shaded standard error area, use se=FALSE
+#' 
 #' @return a plot
 #' 
 #' @seealso \code{\link{get_data}}
@@ -17,7 +20,7 @@
 #'  plot_dates(my_data)
   
 
-plot_dates <- function(my_data, ...){
+plot_dates <- function(my_data, se=TRUE, ...){
 # get date data from google sheet
 # Raw data on AMS ages from DirectAMS, then prepare for OxCal batch conversion
 # at https://c14.arch.ox.ac.uk/oxcal/OxCal.html
@@ -76,11 +79,11 @@ dates$depth <- (dates$spit * 5)/100 # each spit was nominally 5 cm thick
 require(ggplot2)
 d <- ggplot(dates, aes(OxCal.median/1000, depth)) +
   geom_point(size = 4) + 
-  stat_smooth() +
+  stat_smooth(se=se) +
   ylab("Depth below surface (m)") +
   xlab("Age (x 1000 y cal BP)") +
   scale_y_reverse() +
-  theme_minimal()
+  theme_minimal(...)
 
 return (d)
   

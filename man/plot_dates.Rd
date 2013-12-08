@@ -2,11 +2,15 @@
 \alias{plot_dates}
 \title{Plot radiocarbon date data}
 \usage{
-  plot_dates(my_data, ...)
+  plot_dates(my_data, se = TRUE, ...)
 }
 \arguments{
   \item{my_data}{The data frame that resutled from running
   the get_data function}
+
+  \item{se}{draw the standard error area in the plot?
+  Default in TRUE. To turn off the shaded standard error
+  area, use se=FALSE}
 }
 \value{
   a plot

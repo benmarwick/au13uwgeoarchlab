@@ -51,13 +51,16 @@ biplot_with_correlation <- function(my_data, var1, var2, ...){
   
   my_data <- my_data[!is.na(my_data$Sample.ID),]
   
-  x <- my_data[,names(my_data) %in% var1]
-  y <- my_data[,names(my_data) %in% var2]
-  df <- data.frame(x = x, y = y, Sample.ID = my_data$Sample.ID)
-  # names(df) <- c(var1, var2, "Sample.ID")
+  df <- data.frame(x = my_data[,names(my_data) %in% var1], 
+                   y = my_data[,names(my_data) %in% var2], 
+                   Sample.ID = my_data$Sample.ID)
+  df <- na.omit(df)
+  x <- df$x
+  y <- df$y
   
   require(ggplot2)
-  suppressWarnings(print(ggplot(df, aes(x, y, label = Sample.ID)) +        
+  
+  suppressWarnings(print(ggplot(df, aes(x, y, label = Sample.ID, ...)) +        
     # make the basic plot object
     scale_x_continuous(limit=c(min(x),
                                max(x)), 
@@ -72,7 +75,7 @@ biplot_with_correlation <- function(my_data, var1, var2, ...){
                        breaks=round(fivenum(y),1)) +     
     # set the locations of the y-axis labels
     ylab(var2) +                   
-    geom_text() + # specify that the data points are the sample names
+    geom_text(...) + # specify that the data points are the sample names
     geom_rug(size=0.1) +   # specify that we want the rug plot
     geom_smooth(aes(group = 1), method="lm", fill="grey70", alpha=0.05,
                 colour="grey50") + 
@@ -97,7 +100,8 @@ biplot_with_correlation <- function(my_data, var1, var2, ...){
          axis.text.y=element_text(size=12))  )  )    
   # increase size of numbers on y-axis
     
-  
+      
+
   
   
 }

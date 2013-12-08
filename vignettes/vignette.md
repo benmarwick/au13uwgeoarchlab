@@ -41,6 +41,10 @@ Brief description of how you measured pH, EC, SOM , CaCO~3~... The maximum value
 of organics was 9.74% at 1.6m below the surface
 
 The maximum value of carbonates was 33.8% at 0.9m below the surface, approximately 4,800 BP 
+
+The range in electrical conductivity ranged from 514.3 to 90.3
+
+
  
 ### Physical analyses 
  
@@ -177,6 +181,17 @@ Don't forget to edit the table captions...
 |  **83**  |     4.1     |    7.1    |    183    |    123.1     |    -15.25    |      6.51      |     3.93     |
 
 Table: My great data
+
+
+
+
+|  &nbsp;   |  mean.pH  |  mean.EC  |  mean.MS.LF  |  mean.MS.FD  |  mean.Organic  |  mean.CaCO3  |
+|:---------:|:---------:|:---------:|:------------:|:------------:|:--------------:|:------------:|
+|  **Min**  |   6.93    |   90.3    |    45.75     |    -24.1     |      2.94      |     3.76     |
+|  **Max**  |   8.67    |   514.3   |     3146     |     29.9     |      9.74      |     33.8     |
+
+Table: My great data
+
 
 
 You might just want to have a table of sediment munsell colour values...

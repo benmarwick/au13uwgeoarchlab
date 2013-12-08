@@ -2,10 +2,14 @@
 \alias{interpolate_date}
 \title{Interpolate a radiocarbon date from a given depth below the surface}
 \usage{
-  interpolate_date(my_data, depth_in_m, ...)
+  interpolate_date(my_data, depth_in_m, span = 0.75, ...)
 }
 \arguments{
   \item{my_data}{}
+
+  \item{span}{the parameter α which controls the degree of
+  smoothing for the loess interpolation. Default is 0.75.
+  From stats::loess}
 }
 \value{
   An age estimate for the depth provided

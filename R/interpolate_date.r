@@ -16,6 +16,8 @@
 #' 
 #' @param my_data 
 #' 
+#' @param span the parameter α which controls the degree of smoothing for the loess interpolation. Default is 0.75. From stats::loess
+#' 
 #' @return An age estimate for the depth provided
 #' 
 #' @seealso \code{\link{get_data}}
@@ -30,7 +32,7 @@
 #'  
   
 
-interpolate_date <- function(my_data, depth_in_m, ...){
+interpolate_date <- function(my_data, depth_in_m, span = 0.75, ...){
   # get date data from google sheet
   # Raw data on AMS ages from DirectAMS, then prepare for OxCal batch conversion
   # at https://c14.arch.ox.ac.uk/oxcal/OxCal.html
@@ -84,7 +86,7 @@ interpolate_date <- function(my_data, depth_in_m, ...){
   dates$depth <- (dates$spit * 5)/100 # each spit was nominally 5 cm thick
   # Compute values along loess curve to get ages for specific depths below the
   # surface (ie. ages for each sediment sample)
-  span <- 0.75 # this has a big influence on the shape of the curve, experiment with it!
+  # span <- 0.75 # this has a big influence on the shape of the curve, experiment with it!
   cal.date.lo <- loess(OxCal.median ~ depth, dates, span = span)
   cal.date.pr <- predict(cal.date.lo, data.frame(depth = seq(0, max(dates$depth), 0.01)))
   cal.date.pr <- data.frame(age = unname(cal.date.pr), depth = as.numeric(names(cal.date.pr)))

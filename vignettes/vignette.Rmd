@@ -49,6 +49,10 @@ Brief description of how you measured pH, EC, SOM , CaCO~3~... The maximum value
 of organics was `r max(my_data$mean.Organic)`% at `r my_data[which.max(my_data$mean.Organic),]$Sample.ID`m below the surface
 
 The maximum value of carbonates was `r max(my_data$mean.CaCO3)`% at `r my_data[which.max(my_data$mean.CaCO3),]$Sample.ID`m below the surface, approximately `r au13uwgeoarchlab::interpolate_date(my_data, my_data[which.max(my_data$mean.CaCO3),]$Sample.ID)` BP 
+
+The range in electrical conductivity ranged from `r max(my_data$mean.EC)` to `r min(my_data$mean.EC)`
+
+
  
 ### Physical analyses 
  
@@ -148,6 +152,26 @@ table_data <- my_data[, c('Sample.ID',
                                      'mean.CaCO3')]
 pander(table_data, style = 'rmarkdown')
 ```
+
+
+```{r table-summary, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+require(pander)
+panderOptions('table.split.table', Inf)
+set.caption("My great data")
+# specify variables that you want to summarise
+my_vars <- c('mean.pH',
+             'mean.EC',
+             'mean.MS.LF',
+             'mean.MS.FD',
+             'mean.Organic',
+             'mean.CaCO3')
+# apply a function to a subset of my_data that
+# only includes these variables
+smry <- data.frame(sapply(my_data[,my_vars], function(i) list(mean(i), range(i))))
+row.names(smry) <- c('Min', 'Max')
+pander(smry, style = 'rmarkdown')
+```
+
 
 You might just want to have a table of sediment munsell colour values...
 
