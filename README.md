@@ -41,8 +41,10 @@ character in it. Change your filename so it has no spaces and, ideally,
 no punctuation that can be mistaken for a maths symbol (ie. no +, -, /. :, periods, etc.)
 
 Message: `...had status 1`
-Solution: You probably have your PDF file open and R cannot overwrite the file
-while it's open. Quit all your PDF files and try again. 
+Solution: A few possibilities... You may have your PDF file open and R cannot overwrite the file while it's open. Quit all your PDF files and try again. Or,you may have an exotic
+character in your text, like a degree symbol or letters with accents or diacritics 
+that is causing encoding problems. Replace exotic characters with more standard ones
+and try again. 
 
 Message: `... .Random.seed ...`
 Solution: Go to the location of your markdown file and delete the folders called

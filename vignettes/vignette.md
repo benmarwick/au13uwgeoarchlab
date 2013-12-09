@@ -185,10 +185,10 @@ Table: My great data
 
 
 
-|  &nbsp;   |  mean.pH  |  mean.EC  |  mean.MS.LF  |  mean.MS.FD  |  mean.Organic  |  mean.CaCO3  |
-|:---------:|:---------:|:---------:|:------------:|:------------:|:--------------:|:------------:|
-|  **Min**  |   6.93    |   90.3    |    45.75     |    -24.1     |      2.94      |     3.76     |
-|  **Max**  |   8.67    |   514.3   |     3146     |     29.9     |      9.74      |     33.8     |
+|  &nbsp;   |  mean.pH   |   mean.EC   |   mean.MS.LF   |  mean.MS.FD  |  mean.Organic  |  mean.CaCO3  |
+|:---------:|:----------:|:-----------:|:--------------:|:------------:|:--------------:|:------------:|
+|  **Min**  |    8.21    |    157.1    |      1827      |    6.158     |     5.061      |    15.86     |
+|  **Max**  | 6.93, 8.67 | 90.3, 514.3 | 45.75, 3145.56 | -24.1, 29.9  |   2.94, 9.74   | 3.76, 33.80  |
 
 Table: My great data
 
@@ -317,6 +317,9 @@ And now Figures...
 
 
 ![this is one plot](figure/carbonate-shell-biplot.png) 
+
+
+![this is one plot](figure/sed-shell-biplot.png) 
 
  
 

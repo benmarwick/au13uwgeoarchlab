@@ -261,6 +261,17 @@ biplot_with_correlation(my_data, 'mean.MS.LF', 'Lithic_mass_g')
 require(au13uwgeoarchlab)
 biplot_with_correlation(my_data, 'mean.CaCO3', 'Freshwater_shell_mass_g')
 ```
+
+```{r sed-shell-biplot, echo=FALSE, message=FALSE, warnings=FALSE, fig.cap='this is one plot'}
+# Use this chunk as an example of how to make a biplot. You may want copy this 
+# chunk and put it elsewhere in your report to make a biplot of other 
+# variables, such as 'mean.Organic' and 'mean.MS.LF', just replace
+# them the function. To get a list of our variables, type: names(my_data)
+
+require(au13uwgeoarchlab)
+my_data <- derivative_dates(my_data) # add derivative column
+biplot_with_correlation(my_data, 'deriv', 'Freshwater_shell_mass_g')
+```
  
 
 ```{r psd-ternary-plot, echo=FALSE, message=FALSE, warning=FALSE, fig.cap='this is one plot'}
