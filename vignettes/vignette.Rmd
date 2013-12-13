@@ -305,11 +305,16 @@ my_psd_stats <- psd_stats(my_data, plot = TRUE)
 
 ```{r,  code-to-make-PDF, echo=FALSE, message=FALSE, eval=FALSE}
 
-# This chunck is to run the code and generate the PDF
+# This chunk is to run the code and generate the PDF
 # it will not appear in the PDF because we've set 'echo=FALSE' and
 # it will not run when you knit HTML because we've set 'eval=FALSE' so
 # you'll need to run this block line-by-line to get the PDF (save 
 # the file first!)
+
+# For this step you'll need to have two other programs installed on your computer
+# 1. Pandoc: http://johnmacfarlane.net/pandoc/installing.html
+# 2. LaTeX: follow the instructions on the Pandoc download page
+
 require(au13uwgeoarchlab)
 rmd_to_pdf("vignette",
            "C:/Users/marwick/Documents/GitHub/au13uwgeoarchlab/vignettes")
