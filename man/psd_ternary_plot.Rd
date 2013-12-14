@@ -2,7 +2,7 @@
 \alias{psd_ternary_plot}
 \title{Displays all the samples on a ternary plot}
 \usage{
-  psd_ternary_plot(my_data, cex = 0.75, ...)
+  psd_ternary_plot(my_data, cex = 0.75, col = "blue", ...)
 }
 \arguments{
   \item{my_data}{the data resulting from the
@@ -11,6 +11,10 @@
   \item{cex}{number indicating the amount by which plotting
   text should be scaled relative to the default. Default
   here is 0.75.}
+
+  \item{col}{colour to plot the samples. Default is blue.
+  For other possible colour, type \code{colours()} at the
+  console.}
 }
 \value{
   a ternary sediment texture plot

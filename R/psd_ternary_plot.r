@@ -7,6 +7,9 @@
 #' @param cex number indicating the amount by which plotting text should be 
 #' scaled relative to the default. Default here is 0.75. 
 #' 
+#' @param col colour to plot the samples. Default is blue. For other possible
+#' colour, type \code{colours()} at the console.
+#' 
 #' @return a ternary sediment texture plot
 #' 
 #' @seealso \code{\link{get_data}}
@@ -19,7 +22,7 @@
 #'  
   
 
-psd_ternary_plot <- function(my_data, cex = 0.75, ...){
+psd_ternary_plot <- function(my_data, cex = 0.75, col = "blue", ...){
   
   # data preparation function
   three_classes <- psd_three_classes(my_data)
@@ -44,7 +47,7 @@ TT.text(
     geo = geo,
     labels =  rownames(three_classes),
     font = 2,
-    col = "blue", 
+    col = col, 
     tri.sum.tst = FALSE,
     cex = cex # size of point labels, feel free to adjust
   ) #
