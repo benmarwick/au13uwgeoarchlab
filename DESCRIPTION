@@ -1,7 +1,7 @@
 Package: au13uwgeoarchlab
 Type: Package
 Title: Analysing and visualising geoarchaeology data
-Version: 0.1
+Version: 0.1.20140329
 Date: 2013-11-23
 Author: Ben Marwick
 Maintainer: Ben Marwick <bmarwick@uw.edu>

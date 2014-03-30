@@ -36,6 +36,10 @@
 
 rmd_to_pdf <- function(my_rmd_filename,  wd, ...){
   
+  # fix slashes
+  # wd <- gsub("\\\\","/", wd)
+
+  
   # set working directory - you'll need to change this to the folder where 
   # you've saved this file that you're working on. Note the double-backslashes!
   tmp <- getwd()
